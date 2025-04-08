@@ -211,8 +211,8 @@
     });
     
     // Highlight current section based on scroll
-    if (document.querySelector('.content')) {
-      const headings = document.querySelectorAll('.content h2, .content h3');
+    if (document.querySelector('.page-content')) {
+      const headings = document.querySelectorAll('.page-content h2, .page-content h3');
       const sidebarLinks = document.querySelectorAll('.sub-nav a');
       
       if (headings.length > 0 && sidebarLinks.length > 0) {
@@ -221,7 +221,7 @@
           
           headings.forEach(heading => {
             const sectionTop = heading.offsetTop - 100;
-            if (pageYOffset >= sectionTop) {
+            if (window.pageYOffset >= sectionTop) {
               current = '#' + heading.getAttribute('id');
             }
           });
