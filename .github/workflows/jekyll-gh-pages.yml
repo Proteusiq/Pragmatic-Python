@@ -20,7 +20,7 @@ permissions:
   id-token: write
 
 env:
-  RUBY_VERSION: '3.2'
+  RUBY_VERSION: '3.2.2'
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -41,13 +41,22 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-          cache-version: 1
+          cache-version: 2
+          cache-version: 2
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
 
-      - name: Run markdown linting
-        run: bundle exec mdl . || true
+      - name: Run markdown linting with auto-fix
+        run: |
+          # First attempt to auto-fix common issues
+          bundle exec mdl . --auto-correct || true
+          
+          # Then run a check - if this fails, it means there are issues that couldn't be auto-fixed
+          bundle exec mdl . --warn-error
 
   # Build job
   build:
@@ -67,7 +76,10 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
 
       - name: Build with Jekyll
         run: bundle exec jekyll build
