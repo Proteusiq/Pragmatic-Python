@@ -21,11 +21,8 @@ classifiers = [
 dev = [
     "pre-commit",
     "mdformat",
-    "mdformat-gfm",
     "mdformat-frontmatter",
     "mdformat-footnote",
-    "linkify-it-py",
-    "mdit-py-plugins",
 ]
 docs = [
     "mkdocs",

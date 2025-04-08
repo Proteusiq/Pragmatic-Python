@@ -25,7 +25,6 @@ repos:
     hooks:
     -   id: mdformat
         additional_dependencies:
-        -   mdformat-gfm  # GitHub-Flavored Markdown
         -   mdformat-frontmatter  # YAML frontmatter
         -   mdformat-footnote  # Footnotes
 
