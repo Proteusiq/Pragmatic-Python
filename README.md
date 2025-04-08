@@ -54,10 +54,16 @@ Markdown file.
 
 ### Local Preview
 
-To preview the book locally:
+To preview the book locally, you can use either of these commands:
 
 ```bash
 bundle exec jekyll serve
+```
+
+Or using Bun:
+
+```bash
+bun run jekyll:serve
 ```
 
 This will start the Jekyll development server and you can view the site at [http://localhost:4000](http://localhost:4000).
