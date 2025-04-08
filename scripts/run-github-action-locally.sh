@@ -20,7 +20,13 @@ fi
 
 # Run the GitHub Action workflow
 echo "Running GitHub Actions workflow locally..."
-act -j build
+# Use --container-architecture flag for M1/M2 Macs
+if [[ $(uname -m) == 'arm64' ]]; then
+  echo "Detected Apple Silicon, using linux/amd64 architecture for containers..."
+  act -j build --container-architecture linux/amd64
+else
+  act -j build
+fi
 
 # If you want to run a specific job, use:
 # act -j lint
