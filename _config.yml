@@ -1,0 +1,14 @@
+# Site settings for Pragmatic Python book
+title: Pragmatic Python
+description: A practical guide to Python programming
+author: Your Name
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# GitHub Pages settings
+github:
+  is_project_page: true
+  repository_url: https://github.com/yourusername/pragmatic-python
