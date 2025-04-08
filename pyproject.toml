@@ -24,6 +24,8 @@ dev = [
     "mdformat-gfm",
     "mdformat-frontmatter",
     "mdformat-footnote",
+    "linkify-it-py",
+    "mdit-py-plugins",
 ]
 docs = [
     "mkdocs",
