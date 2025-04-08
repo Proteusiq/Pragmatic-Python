@@ -1,33 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>{{ site.title }}</h1>
-            <p>{{ site.description }}</p>
-        </div>
-    </header>
-
-    <main class="container">
-        {{ content }}
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
@@ -37,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
   
   <!-- Custom styles -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -45,24 +19,55 @@
   <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
+  <div class="book-container">
+    <aside class="book-sidebar">
+      <div class="sidebar-header">
+        <div class="logo">P</div>
+        <h2>{{ site.title }}</h2>
+      </div>
+      
+      <div class="sidebar-content">
+        {% include navigation.html %}
+      </div>
+      
+      <div class="sidebar-footer">
+        <p>&copy; {{ site.time | date: '%Y' }}</p>
+      </div>
+    </aside>
+    
+    <div class="book-content">
+      <header class="book-header">
+        <div class="header-content">
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+        </div>
+      </header>
+
+      <main class="content-wrapper">
+        <div class="page-content">
+          {{ content }}
+        </div>
+      </main>
+
+      <footer class="book-footer">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+        <p>Built with <a href="https://jekyllrb.com/">Jekyll</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+      </footer>
     </div>
-  </header>
-
-  {% include navigation.html %}
-
-  <main class="container">
-    {{ content }}
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-      <p>Built with <a href="https://jekyllrb.com/">Jekyll</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
-    </div>
-  </footer>
+  </div>
+  
+  <script>
+    // Toggle mobile navigation
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.createElement('button');
+      toggleButton.classList.add('sidebar-toggle');
+      toggleButton.innerHTML = '☰';
+      document.querySelector('.book-header').prepend(toggleButton);
+      
+      toggleButton.addEventListener('click', function() {
+        document.querySelector('.book-container').classList.toggle('sidebar-open');
+      });
+    });
+  </script>
 </body>
 </html>

@@ -1,9 +1,36 @@
-<nav class="site-nav">
-  <div class="container">
+<nav class="book-nav">
+  <div class="nav-section">
+    <h3>Navigation</h3>
     <ul class="nav-links">
-      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-      <li><a href="{{ '/docs/Introduction' | relative_url }}" {% if page.url contains '/docs/' %}class="active"{% endif %}>Book</a></li>
-      <li><a href="https://github.com/yourusername/pragmatic-python" target="_blank">GitHub</a></li>
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>
+        <span class="nav-icon">🏠</span>Home
+      </a></li>
+      <li><a href="{{ '/docs/Introduction' | relative_url }}" {% if page.url contains '/docs/Introduction' %}class="active"{% endif %}>
+        <span class="nav-icon">📖</span>Introduction
+      </a></li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h3>Chapters</h3>
+    <ul class="nav-links chapters">
+      <li><a href="{{ '/docs/Introduction' | relative_url }}" {% if page.url contains '/docs/Introduction' %}class="active"{% endif %}>Introduction</a></li>
+      <!-- Add your chapters here -->
+      <li><a href="#" class="coming-soon">Chapter 1: Getting Started</a></li>
+      <li><a href="#" class="coming-soon">Chapter 2: Core Concepts</a></li>
+      <li><a href="#" class="coming-soon">Chapter 3: Advanced Techniques</a></li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h3>Resources</h3>
+    <ul class="nav-links">
+      <li><a href="https://github.com/yourusername/pragmatic-python" target="_blank">
+        <span class="nav-icon">🔗</span>GitHub Repository
+      </a></li>
+      <li><a href="#" target="_blank">
+        <span class="nav-icon">📚</span>Python Documentation
+      </a></li>
     </ul>
   </div>
 </nav>
