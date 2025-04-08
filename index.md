@@ -3,14 +3,12 @@ layout: default
 title: Pragmatic Python
 ---
 
-Welcome to Pragmatic Python, a comprehensive guide to mastering Python programming through practical examples and best practices.
+So, you’re pragmatic, eh? Pragmatic Python is a book my alter-ego always wanted to write to my democratic self. It is fiercely opinionated way to programming with Python. I bring a hefty dose of Danish sarcasm to the table and don’t take everything too seriously—because, let’s be real, religiously following ideas, best practices, design patterns or rules is a total buzzkill (and frankly anti-pragmatic). It’s for my book, Pragmatic Python, of course.
 
 ## Contents
 
 - [Introduction](docs/Introduction.md)
 - [Chapter 1: Getting Started](docs/chapter1.md) (Coming soon)
-- [Chapter 2: Python Fundamentals](docs/chapter2.md) (Coming soon)
-- [Chapter 3: Advanced Concepts](docs/chapter3.md) (Coming soon)
 
 ## About This Book
 
