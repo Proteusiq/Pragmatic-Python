@@ -4,7 +4,7 @@
     "prettier": "3.5.3"
   },
   "scripts": {
-    "serve": "bundle exec jekyll serve",
-    "build": "bundle exec jekyll build"
+    "serve": "npx -y http-server . -o",
+    "build": "echo 'GitHub Pages will build the site automatically when you push to the repository'"
   }
 }
