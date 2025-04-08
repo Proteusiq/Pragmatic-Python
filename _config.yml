@@ -12,3 +12,8 @@ permalink: pretty
 github:
   is_project_page: true
   repository_url: https://github.com/yourusername/pragmatic-python
+
+# Development settings
+development:
+  markdown_linting: true
+  pre_commit_hooks: true
