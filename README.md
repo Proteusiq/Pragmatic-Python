@@ -86,32 +86,14 @@ like:
 
 ### Local Preview
 
-To preview the book locally, you can use either of these commands:
+To preview the book locally, run:
 
 ```bash
 bundle exec jekyll serve
 ```
 
-Or using Bun:
-
-```bash
-bun run jekyll:serve
-```
-
-Note: If you installed gems with `--user-install`, you may need to use:
-
-```bash
-bundle exec --path vendor/bundle jekyll serve
-```
-
 This will start the Jekyll development server and you can view the site at
 [http://localhost:4000](http://localhost:4000).
-
-You can also build the site without serving it:
-
-```bash
-bundle exec jekyll build
-```
 
 Other useful commands:
 
