@@ -23,14 +23,16 @@ This book is built using Jekyll and GitHub Pages. The content is written in Mark
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
-3. Install dependencies:
+3. Create a virtual environment and install dependencies:
    ```bash
+   uv venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    uv pip install -e ".[dev,docs]"
    ```
 
-4. Install pre-commit hooks:
+4. Install pre-commit hooks (including post-checkout, post-merge, and post-rewrite hooks):
    ```bash
-   pre-commit install
+   pre-commit install --install-hooks -t pre-commit -t post-checkout -t post-merge -t post-rewrite
    ```
 
 ### Writing Content

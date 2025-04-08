@@ -1,3 +1,9 @@
+default_install_hook_types:
+  - pre-commit
+  - post-checkout
+  - post-merge
+  - post-rewrite
+
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -31,8 +37,10 @@ repos:
     -   id: ruff-format
 
 -   repo: https://github.com/astral-sh/uv-pre-commit
-    rev: v0.1.0
+    rev: 0.6.13
     hooks:
+    -   id: uv-lock
+        name: Lock dependencies with uv
     -   id: uv-sync
         name: Sync dependencies with uv
         args: [--python-version=3.8, --extras=dev,docs]
