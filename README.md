@@ -57,17 +57,26 @@ Markdown file.
 To preview the book locally:
 
 ```bash
-jekyll serve
+bun run jekyll:serve
 ```
 
-```sh
-# things
+This will start the Jekyll development server and you can view the site at [http://localhost:4000](http://localhost:4000).
+
+You can also build the site without serving it:
+
+```bash
+bun run jekyll:build
+```
+
+Other useful commands:
+
+```bash
+# Format markdown files
 bun run prettier --write --prose-wrap always --print-width 120 "**/*.md"
+
+# Run LanguageTool for grammar checking
 docker run --rm -p 8010:8010 erikvl87/languagetool
-
 ```
-
-Then open your browser to [http://localhost:4000](http://localhost:4000)
 
 ## License
 
