@@ -1,36 +1,86 @@
-<nav class="book-nav">
-  <div class="nav-section">
-    <h3>Navigation</h3>
-    <ul class="nav-links">
-      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>
-        <span class="nav-icon">🏠</span>Home
-      </a></li>
-      <li><a href="{{ '/docs/Introduction' | relative_url }}" {% if page.url contains '/docs/Introduction' %}class="active"{% endif %}>
-        <span class="nav-icon">📖</span>Introduction
-      </a></li>
-    </ul>
-  </div>
-  
-  <div class="nav-section">
-    <h3>Chapters</h3>
-    <ul class="nav-links chapters">
-      <li><a href="{{ '/docs/Introduction' | relative_url }}" {% if page.url contains '/docs/Introduction' %}class="active"{% endif %}>Introduction</a></li>
-      <!-- Add your chapters here -->
-      <li><a href="#" class="coming-soon">Chapter 1: Getting Started</a></li>
-      <li><a href="#" class="coming-soon">Chapter 2: Core Concepts</a></li>
-      <li><a href="#" class="coming-soon">Chapter 3: Advanced Techniques</a></li>
-    </ul>
-  </div>
-  
-  <div class="nav-section">
-    <h3>Resources</h3>
-    <ul class="nav-links">
-      <li><a href="https://github.com/yourusername/pragmatic-python" target="_blank">
-        <span class="nav-icon">🔗</span>GitHub Repository
-      </a></li>
-      <li><a href="#" target="_blank">
-        <span class="nav-icon">📚</span>Python Documentation
-      </a></li>
-    </ul>
+<nav class="modern-nav">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="{{ '/' | relative_url }}">
+        <span class="logo-icon">P²</span>
+        <span class="logo-text">Pragmatic Python</span>
+      </a>
+    </div>
+    
+    <div class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>
+        <span class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        </span>
+        <span>Home</span>
+      </a>
+      <a href="{{ '/docs/Introduction' | relative_url }}" {% if page.url contains '/docs/Introduction' %}class="active"{% endif %}>
+        <span class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+        </span>
+        <span>Introduction</span>
+      </a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-trigger">
+          <span class="nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </span>
+          <span>Chapters</span>
+          <span class="dropdown-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </span>
+        </a>
+        <div class="dropdown-content">
+          <a href="{{ '/docs/Introduction' | relative_url }}" {% if page.url contains '/docs/Introduction' %}class="active"{% endif %}>Introduction</a>
+          <a href="#" class="coming-soon">Chapter 1: Getting Started</a>
+          <a href="#" class="coming-soon">Chapter 2: Core Concepts</a>
+          <a href="#" class="coming-soon">Chapter 3: Advanced Techniques</a>
+        </div>
+      </div>
+      <a href="https://github.com/yourusername/pragmatic-python" target="_blank" class="github-link">
+        <span class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </span>
+        <span>GitHub</span>
+      </a>
+    </div>
   </div>
 </nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Mobile navigation toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    navToggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    
+    // Dropdown functionality
+    const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
+    
+    dropdownTriggers.forEach(trigger => {
+      trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      dropdownTriggers.forEach(trigger => {
+        if (!trigger.contains(e.target)) {
+          trigger.parentElement.classList.remove('open');
+        }
+      });
+    });
+  });
+</script>
