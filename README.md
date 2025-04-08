@@ -63,6 +63,7 @@ jekyll serve
 ```sh
 # things
 bun run prettier --write --prose-wrap always --print-width 120 "**/*.md"
+docker run --rm -p 8010:8010 erikvl87/languagetool
 
 ```
 
