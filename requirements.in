@@ -1,0 +1,11 @@
+# Development dependencies
+pre-commit
+mdformat
+mdformat-gfm
+mdformat-frontmatter
+mdformat-footnote
+markdownlint-cli
+
+# Documentation dependencies
+mkdocs
+mkdocs-material

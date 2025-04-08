@@ -21,3 +21,12 @@ repos:
         -   mdformat-gfm  # GitHub-Flavored Markdown
         -   mdformat-frontmatter  # YAML frontmatter
         -   mdformat-footnote  # Footnotes
+
+-   repo: https://github.com/astral-sh/uv-pre-commit
+    rev: v0.1.0
+    hooks:
+    -   id: pip-compile
+        name: Lock dependencies with uv
+        args: [--upgrade]
+    -   id: pip-sync
+        name: Sync dependencies with uv
