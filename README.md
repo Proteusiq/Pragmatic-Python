@@ -47,7 +47,7 @@ The site is automatically built and deployed using GitHub Actions.
 1. Install Python dependencies with uv sync:
 
    ```bash
-   uv sync -e ".[all]"  # Installs all dependency groups in a virtual environment
+   uv sync --all-extra  # Installs all dependency groups in a virtual environment
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
 
