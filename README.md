@@ -17,14 +17,15 @@ anti-pragmatic). It’s for my book, Pragmatic Python, of course.
 
 This book is built using Jekyll and GitHub Pages. The content is written in
 Markdown and automatically published when changes are pushed to the main branch.
+The site is automatically built and deployed using GitHub Actions.
 
 ### Setup Development Environment
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/pragmatic-python.git
-   cd pragmatic-python
+   git clone https://github.com/Proteusiq/Pragmatic-Python.git
+   cd Pragmatic-Python
    ```
 
 1. Install Ruby dependencies:
@@ -78,6 +79,9 @@ The book follows the "Friends Don't Let Friends..." format, covering topics like
 - Avoiding over-engineering with OOP and functional paradigms
 - Type annotations
 - Code formatting and style
+- Performance optimization
+- Deployment best practices
+- Documentation strategies
 
 ### Local Preview
 
@@ -116,6 +120,16 @@ bun run format
 # Run LanguageTool for grammar checking
 docker run --rm -p 8010:8010 erikvl87/languagetool
 ```
+
+### Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
