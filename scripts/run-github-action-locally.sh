@@ -18,14 +18,27 @@ if ! command -v act &> /dev/null; then
   fi
 fi
 
+# Set default job
+JOB=${1:-build}
+
 # Run the GitHub Action workflow
-echo "Running GitHub Actions workflow locally..."
+echo "Running GitHub Actions workflow locally (job: $JOB)..."
+
 # Use --container-architecture flag for M1/M2 Macs
 if [[ $(uname -m) == 'arm64' ]]; then
   echo "Detected Apple Silicon, using linux/amd64 architecture for containers..."
-  act -j build --container-architecture linux/amd64
+  act -j "$JOB" --container-architecture linux/amd64
 else
-  act -j build
+  act -j "$JOB"
+fi
+
+# Check if the job ran successfully
+if [ $? -ne 0 ]; then
+  echo "❌ GitHub Action job '$JOB' failed locally"
+  echo "Try running with a specific job: ./$(basename "$0") lint|build|deploy"
+  exit 1
+else
+  echo "✅ GitHub Action job '$JOB' completed successfully"
 fi
 
 # If you want to run a specific job, use:
