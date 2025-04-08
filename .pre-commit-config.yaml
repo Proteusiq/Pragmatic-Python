@@ -43,4 +43,4 @@ repos:
         name: Lock dependencies with uv
     -   id: uv-sync
         name: Sync dependencies with uv
-        args: [--python-version=3.8, --extras=dev,docs]
+        args: [--python-version=3.8, --group=dev, --group=docs, --group=lint]

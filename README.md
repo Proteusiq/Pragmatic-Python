@@ -27,7 +27,7 @@ This book is built using Jekyll and GitHub Pages. The content is written in Mark
    ```bash
    uv venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   uv pip install -e ".[dev,docs]"
+   uv pip install -e ".[all]"  # Installs all dependency groups
    ```
 
 4. Install pre-commit hooks (including post-checkout, post-merge, and post-rewrite hooks):
