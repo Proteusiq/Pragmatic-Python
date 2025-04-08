@@ -4,8 +4,6 @@
     "prettier": "3.5.3"
   },
   "scripts": {
-    "build": "echo 'GitHub Pages will build the site automatically when you push to the repository'",
-    "jekyll:serve": "JEKYLL_ENV=development bundle exec jekyll serve",
-    "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build"
+    "format": "prettier --write --prose-wrap always --print-width 120 \"**/*.md\""
   }
 }
