@@ -6,14 +6,14 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
-    
+
     <div class="sidebar-search">
       <div class="search-container">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         <input type="text" id="sidebarSearch" placeholder="Search chapters...">
       </div>
     </div>
-    
+
     <nav class="sidebar-nav">
       <div class="nav-group">
         <div class="nav-group-title">Getting Started</div>
@@ -33,7 +33,7 @@
               </span>
               <span>Introduction</span>
             </a>
-            
+
             {% if page.url contains '/docs/Introduction' %}
             <ul class="sub-nav">
               <li><a href="#pragmatic-mindset">Pragmatic Mindset</a></li>
@@ -43,7 +43,7 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="nav-group">
         <div class="nav-group-title">Core Concepts</div>
         <ul>
@@ -65,7 +65,7 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="nav-group">
         <div class="nav-group-title">Best Practices</div>
         <ul>
@@ -95,7 +95,7 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="nav-group">
         <div class="nav-group-title">Advanced Topics</div>
         <ul>
@@ -118,7 +118,7 @@
         </ul>
       </div>
     </nav>
-    
+
     <div class="sidebar-footer">
       <a href="https://github.com/yourusername/pragmatic-python" target="_blank" class="github-button">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
@@ -139,36 +139,36 @@
     const sidebar = document.querySelector('.modern-sidebar');
     const sidebarSearch = document.getElementById('sidebarSearch');
     const navItems = document.querySelectorAll('.sidebar-nav a:not(.coming-soon)');
-    
+
     // Toggle sidebar on mobile
     sidebarToggle.addEventListener('click', function() {
       sidebar.classList.add('active');
       document.body.classList.add('sidebar-open');
     });
-    
+
     // Close sidebar
     sidebarClose.addEventListener('click', function() {
       sidebar.classList.remove('active');
       document.body.classList.remove('sidebar-open');
     });
-    
+
     // Close sidebar when clicking outside
     document.addEventListener('click', function(e) {
-      if (sidebar.classList.contains('active') && 
-          !sidebar.contains(e.target) && 
+      if (sidebar.classList.contains('active') &&
+          !sidebar.contains(e.target) &&
           e.target !== sidebarToggle) {
         sidebar.classList.remove('active');
         document.body.classList.remove('sidebar-open');
       }
     });
-    
+
     // Search functionality
     sidebarSearch.addEventListener('input', function() {
       const searchTerm = this.value.toLowerCase();
-      
+
       document.querySelectorAll('.nav-group').forEach(group => {
         let hasVisibleItems = false;
-        
+
         group.querySelectorAll('li').forEach(item => {
           const text = item.textContent.toLowerCase();
           if (text.includes(searchTerm)) {
@@ -178,28 +178,28 @@
             item.style.display = 'none';
           }
         });
-        
+
         // Show/hide group title based on if it has visible items
         const groupTitle = group.querySelector('.nav-group-title');
         groupTitle.style.display = hasVisibleItems ? '' : 'none';
       });
     });
-    
+
     // Smooth scroll for anchor links
     navItems.forEach(link => {
       if (link.getAttribute('href').startsWith('#')) {
         link.addEventListener('click', function(e) {
           e.preventDefault();
-          
+
           const targetId = this.getAttribute('href');
           const targetElement = document.querySelector(targetId);
-          
+
           if (targetElement) {
             window.scrollTo({
               top: targetElement.offsetTop - 80,
               behavior: 'smooth'
             });
-            
+
             // Close sidebar on mobile after clicking
             if (window.innerWidth < 1024) {
               sidebar.classList.remove('active');
@@ -209,23 +209,23 @@
         });
       }
     });
-    
+
     // Highlight current section based on scroll
     if (document.querySelector('.page-content')) {
       const headings = document.querySelectorAll('.page-content h2, .page-content h3');
       const sidebarLinks = document.querySelectorAll('.sub-nav a');
-      
+
       if (headings.length > 0 && sidebarLinks.length > 0) {
         window.addEventListener('scroll', function() {
           let current = '';
-          
+
           headings.forEach(heading => {
             const sectionTop = heading.offsetTop - 100;
             if (window.pageYOffset >= sectionTop) {
               current = '#' + heading.getAttribute('id');
             }
           });
-          
+
           sidebarLinks.forEach(link => {
             link.classList.remove('current');
             if (link.getAttribute('href') === current) {

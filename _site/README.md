@@ -27,7 +27,7 @@ Markdown and automatically published when changes are pushed to the main branch.
    cd pragmatic-python
    ```
 
-2. Install Ruby dependencies:
+1. Install Ruby dependencies:
 
    ```bash
    # Install Bundler if not already installed
@@ -37,27 +37,27 @@ Markdown and automatically published when changes are pushed to the main branch.
    bundle install --path vendor/bundle
    ```
 
-3. Install uv (if not already installed):
+1. Install uv (if not already installed):
 
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
-4. Install Python dependencies with uv sync:
+1. Install Python dependencies with uv sync:
 
    ```bash
    uv sync -e ".[all]"  # Installs all dependency groups in a virtual environment
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
 
-5. Install pre-commit hooks (including post-checkout, post-merge, and
+1. Install pre-commit hooks (including post-checkout, post-merge, and
    post-rewrite hooks):
 
    ```bash
    pre-commit install --install-hooks -t pre-commit -t post-checkout -t post-merge -t post-rewrite
    ```
 
-6. Install markdown linting tool (optional):
+1. Install markdown linting tool (optional):
 
    ```bash
    # Install with user permissions to avoid permission errors

@@ -6,13 +6,13 @@
         <span class="logo-text">Pragmatic Python</span>
       </a>
     </div>
-    
+
     <div class="nav-toggle" id="navToggle">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    
+
     <div class="nav-links" id="navLinks">
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>
         <span class="nav-icon">
@@ -58,22 +58,22 @@
     // Mobile navigation toggle
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
-    
+
     navToggle.addEventListener('click', function() {
       this.classList.toggle('active');
       navLinks.classList.toggle('active');
     });
-    
+
     // Dropdown functionality
     const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
-    
+
     dropdownTriggers.forEach(trigger => {
       trigger.addEventListener('click', function(e) {
         e.preventDefault();
         this.parentElement.classList.toggle('open');
       });
     });
-    
+
     // Close dropdowns when clicking outside
     document.addEventListener('click', function(e) {
       dropdownTriggers.forEach(trigger => {
