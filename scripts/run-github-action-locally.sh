@@ -21,6 +21,12 @@ fi
 # Set default job
 JOB=${1:-build}
 
+# Update Bundler version in Gemfile.lock if needed
+if grep -q "BUNDLED WITH" Gemfile.lock && grep -q "1.17.2" Gemfile.lock; then
+  echo "Updating Bundler version in Gemfile.lock for local testing..."
+  sed -i '' 's/1.17.2/2.4.22/g' Gemfile.lock
+fi
+
 # Run the GitHub Action workflow
 echo "Running GitHub Actions workflow locally (job: $JOB)..."
 
