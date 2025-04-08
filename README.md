@@ -121,3 +121,5 @@ docker run --rm -p 8010:8010 erikvl87/languagetool
 
 This project is licensed under the MIT License - see the LICENSE file for
 details.
+
+© 2025 Prayson Wilfred Daniel. All rights reserved.
