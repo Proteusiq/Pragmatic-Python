@@ -4,6 +4,7 @@
     "prettier": "3.5.3"
   },
   "scripts": {
-    "format": "prettier --write --prose-wrap always --print-width 120 \"**/*.md\""
+    "format": "prettier --write --prose-wrap always --print-width 120 \"**/*.md\"",
+    "jekyll:serve": "bundle exec jekyll serve"
   }
 }
