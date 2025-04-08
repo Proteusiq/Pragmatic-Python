@@ -5,7 +5,7 @@ title: Pragmatic Python
 
 So, you’re pragmatic, eh? Pragmatic Python is a book my alter-ego always wanted
 to write to my democratic self. It is fiercely opinionated way to programming
-with Python. 
+with Python.
 
 I bring a hefty dose of Danish sarcasm to the table and don’t take
 everything too seriously—because, let’s be real, religiously following ideas,
