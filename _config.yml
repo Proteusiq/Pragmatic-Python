@@ -11,7 +11,7 @@ permalink: pretty
 # GitHub Pages settings
 github:
   is_project_page: true
-  repository_url: https://github.com/yourusername/pragmatic-python
+  repository_url: https://github.com/proteusiq/pragmatic-python
 
 # Development settings
 development:

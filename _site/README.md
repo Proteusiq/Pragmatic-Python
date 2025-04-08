@@ -17,14 +17,15 @@ anti-pragmatic). It’s for my book, Pragmatic Python, of course.
 
 This book is built using Jekyll and GitHub Pages. The content is written in
 Markdown and automatically published when changes are pushed to the main branch.
+The site is automatically built and deployed using GitHub Actions.
 
 ### Setup Development Environment
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/pragmatic-python.git
-   cd pragmatic-python
+   git clone https://github.com/Proteusiq/Pragmatic-Python.git
+   cd Pragmatic-Python
    ```
 
 1. Install Ruby dependencies:
@@ -46,7 +47,7 @@ Markdown and automatically published when changes are pushed to the main branch.
 1. Install Python dependencies with uv sync:
 
    ```bash
-   uv sync -e ".[all]"  # Installs all dependency groups in a virtual environment
+   uv sync --all-extra  # Installs all dependency groups in a virtual environment
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
 
@@ -79,35 +80,20 @@ like:
 - Avoiding over-engineering with OOP and functional paradigms
 - Type annotations
 - Code formatting and style
+- Performance optimization
+- Deployment best practices
+- Documentation strategies
 
 ### Local Preview
 
-To preview the book locally, you can use either of these commands:
+To preview the book locally, run:
 
 ```bash
 bundle exec jekyll serve
 ```
 
-Or using Bun:
-
-```bash
-bun run jekyll:serve
-```
-
-Note: If you installed gems with `--user-install`, you may need to use:
-
-```bash
-bundle exec --path vendor/bundle jekyll serve
-```
-
 This will start the Jekyll development server and you can view the site at
 [http://localhost:4000](http://localhost:4000).
-
-You can also build the site without serving it:
-
-```bash
-bundle exec jekyll build
-```
 
 Other useful commands:
 
@@ -118,6 +104,16 @@ bun run format
 # Run LanguageTool for grammar checking
 docker run --rm -p 8010:8010 erikvl87/languagetool
 ```
+
+### Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+1. Create your feature branch (`git checkout -b feature/amazing-feature`)
+1. Commit your changes (`git commit -m 'Add some amazing feature'`)
+1. Push to the branch (`git push origin feature/amazing-feature`)
+1. Open a Pull Request
 
 ## License
 
