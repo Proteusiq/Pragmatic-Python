@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pragmatic Python | Pragmatic Python</title>
+  <meta name="description" content="A practical guide to Python programming">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+</head>
+<body>
+  <div class="book-container">
+    <aside class="book-sidebar">
+      <div class="sidebar-header">
+        <div class="logo">P</div>
+        <h2>Pragmatic Python</h2>
+      </div>
+      
+      <div class="sidebar-content">
+        <nav class="book-nav">
+  <div class="nav-section">
+    <h3>Navigation</h3>
+    <ul class="nav-links">
+      <li><a href="/" class="active">
+        <span class="nav-icon">🏠</span>Home
+      </a></li>
+      <li><a href="/docs/Introduction" >
+        <span class="nav-icon">📖</span>Introduction
+      </a></li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h3>Chapters</h3>
+    <ul class="nav-links chapters">
+      <li><a href="/docs/Introduction" >Introduction</a></li>
+      <!-- Add your chapters here -->
+      <li><a href="#" class="coming-soon">Chapter 1: Getting Started</a></li>
+      <li><a href="#" class="coming-soon">Chapter 2: Core Concepts</a></li>
+      <li><a href="#" class="coming-soon">Chapter 3: Advanced Techniques</a></li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h3>Resources</h3>
+    <ul class="nav-links">
+      <li><a href="https://github.com/yourusername/pragmatic-python" target="_blank">
+        <span class="nav-icon">🔗</span>GitHub Repository
+      </a></li>
+      <li><a href="#" target="_blank">
+        <span class="nav-icon">📚</span>Python Documentation
+      </a></li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      
+      <div class="sidebar-footer">
+        <p>&copy; 2025</p>
+      </div>
+    </aside>
+    
+    <div class="book-content">
+      <header class="book-header">
+        <div class="header-content">
+          <h1>Pragmatic Python</h1>
+          
+        </div>
+      </header>
+
+      <main class="content-wrapper">
+        <div class="page-content">
+          <p>So, you’re pragmatic, eh? Pragmatic Python is a book my alter-ego always wanted
+to write to my democratic self. It is fiercely opinionated way to programming
+with Python.</p>
+
+<p>I bring a hefty dose of Danish sarcasm to the table and don’t take
+everything too seriously—because, let’s be real, religiously following ideas,
+best practices, design patterns or rules is a total buzzkill (and frankly
+anti-pragmatic). It’s for my book, Pragmatic Python, of course.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul>
+  <li><a href="/docs/Introduction/">Introduction</a></li>
+  <li><a href="docs/chapter1.md">Chapter 1: Getting Started</a> (Coming soon)</li>
+</ul>
+
+<h2 id="about-this-book">About This Book</h2>
+
+<p>Pragmatic Python is designed to help you become proficient in Python programming
+through hands-on examples and real-world applications. Whether you’re a beginner
+or an experienced developer looking to enhance your Python skills, this book
+provides practical guidance for writing clean, efficient, and maintainable
+Python code.</p>
+
+<h2 id="how-to-use-this-book">How to Use This Book</h2>
+
+<p>Each chapter builds upon the previous one, introducing new concepts and
+techniques. You’ll find code examples, exercises, and projects that reinforce
+the material covered in each section.</p>
+
+<p>Happy coding!</p>
+
+        </div>
+      </main>
+
+      <footer class="book-footer">
+        <p>&copy; 2025 Pragmatic Python. All rights reserved.</p>
+        <p>Built with <a href="https://jekyllrb.com/">Jekyll</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+      </footer>
+    </div>
+  </div>
+  
+  <script>
+    // Toggle mobile navigation
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.createElement('button');
+      toggleButton.classList.add('sidebar-toggle');
+      toggleButton.innerHTML = '☰';
+      document.querySelector('.book-header').prepend(toggleButton);
+      
+      toggleButton.addEventListener('click', function() {
+        document.querySelector('.book-container').classList.toggle('sidebar-open');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pragmatic Mindset | Pragmatic Python</title>
+  <meta name="description" content="A practical guide to Python programming">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+</head>
+<body>
+  <div class="book-container">
+    <aside class="book-sidebar">
+      <div class="sidebar-header">
+        <div class="logo">P</div>
+        <h2>Pragmatic Python</h2>
+      </div>
+      
+      <div class="sidebar-content">
+        <nav class="book-nav">
+  <div class="nav-section">
+    <h3>Navigation</h3>
+    <ul class="nav-links">
+      <li><a href="/" >
+        <span class="nav-icon">🏠</span>Home
+      </a></li>
+      <li><a href="/docs/Introduction" class="active">
+        <span class="nav-icon">📖</span>Introduction
+      </a></li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h3>Chapters</h3>
+    <ul class="nav-links chapters">
+      <li><a href="/docs/Introduction" class="active">Introduction</a></li>
+      <!-- Add your chapters here -->
+      <li><a href="#" class="coming-soon">Chapter 1: Getting Started</a></li>
+      <li><a href="#" class="coming-soon">Chapter 2: Core Concepts</a></li>
+      <li><a href="#" class="coming-soon">Chapter 3: Advanced Techniques</a></li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h3>Resources</h3>
+    <ul class="nav-links">
+      <li><a href="https://github.com/yourusername/pragmatic-python" target="_blank">
+        <span class="nav-icon">🔗</span>GitHub Repository
+      </a></li>
+      <li><a href="#" target="_blank">
+        <span class="nav-icon">📚</span>Python Documentation
+      </a></li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      
+      <div class="sidebar-footer">
+        <p>&copy; 2025</p>
+      </div>
+    </aside>
+    
+    <div class="book-content">
+      <header class="book-header">
+        <div class="header-content">
+          <h1>Pragmatic Mindset</h1>
+          
+        </div>
+      </header>
+
+      <main class="content-wrapper">
+        <div class="page-content">
+          <h3 id="pragmatic-mindset">Pragmatic Mindset</h3>
+
+<p>/praɡˈmatɪk/ <em>adjective</em> -  dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations. - Oxford’s Google Dictionary</p>
+
+<p>Python’s got a million ways to write code—functional, OOP, whatever. A pragmatic mindset says, I don’t care about the paradigm fetish. I care about code that works, changes without a meltdown, and doesn’t make onboarding a nightmare. If I can’t understand and test it in ten minutes, it’s trash.</p>
+
+<h4 id="leaving-the-basic-behind-project-structure--environments">Leaving the Basic Behind: Project Structure &amp; Environments</h4>
+
+<h4 id="topics">Topics</h4>
+<ul>
+  <li>Friends Don’t Let Friends Skip Git: Commit or Quit: No Version Control, No Mercy</li>
+  <li>Friends Don’t Let Friends Reinvent Wheels: Use the Damn Stdlib: Stop Coding Like It’s 1999</li>
+  <li>Friends Don’t Let Friends Ship Without Tests: Test or Regret: Bugs Don’t Fix Themselves.</li>
+  <li>Friends Don’t Let Friends Overcomplicate with OOP: Keep It Simple, Genius: Classes Aren’t Your Crutch</li>
+  <li>Friends Don’t Let Friends Get Cute with Functional</li>
+  <li>Friends Don’t Let Friends Cling to Legacy Libraries</li>
+  <li>Friends Don’t Let Friends Ship Untyped Code</li>
+  <li>Friends Don’t Let Friends Reinvent Wheels</li>
+  <li>Friends Don’t Let Friends Waste Time on Formatting Debates</li>
+</ul>
+
+
+        </div>
+      </main>
+
+      <footer class="book-footer">
+        <p>&copy; 2025 Pragmatic Python. All rights reserved.</p>
+        <p>Built with <a href="https://jekyllrb.com/">Jekyll</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+      </footer>
+    </div>
+  </div>
+  
+  <script>
+    // Toggle mobile navigation
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.createElement('button');
+      toggleButton.classList.add('sidebar-toggle');
+      toggleButton.innerHTML = '☰';
+      document.querySelector('.book-header').prepend(toggleButton);
+      
+      toggleButton.addEventListener('click', function() {
+        document.querySelector('.book-container').classList.toggle('sidebar-open');
+      });
+    });
+  </script>
+</body>
+</html>
