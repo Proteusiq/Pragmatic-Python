@@ -1,11 +1,10 @@
 {
   "dependencies": {},
   "devDependencies": {
-    "jekyll": "3.0.0-beta1",
     "prettier": "3.5.3"
   },
   "scripts": {
-    "serve": "jekyll serve",
-    "build": "jekyll build"
+    "serve": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build"
   }
 }
