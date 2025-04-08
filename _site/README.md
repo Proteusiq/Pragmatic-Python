@@ -8,9 +8,9 @@ So, you’re pragmatic, eh? Pragmatic Python is a book my alter-ego always wante
 to write to my democratic self. It is fiercely opinionated way to programming
 with Python.
 
-I bring a hefty dose of Danish sarcasm to the table and don’t take
-everything too seriously—because, let’s be real, religiously following ideas,
-best practices, design patterns or rules is a total buzzkill (and frankly
+I bring a hefty dose of Danish sarcasm to the table and don’t take everything
+too seriously—because, let’s be real, religiously following ideas, best
+practices, design patterns or rules is a total buzzkill (and frankly
 anti-pragmatic). It’s for my book, Pragmatic Python, of course.
 
 ## Development
@@ -69,7 +69,8 @@ Markdown and automatically published when changes are pushed to the main branch.
 Content is organized in the `docs/` directory. Each chapter is a separate
 Markdown file.
 
-The book follows the "Friends Don't Let Friends..." format, covering topics like:
+The book follows the "Friends Don't Let Friends..." format, covering topics
+like:
 
 - Project structure and environments
 - Version control with Git
@@ -99,7 +100,8 @@ Note: If you installed gems with `--user-install`, you may need to use:
 bundle exec --path vendor/bundle jekyll serve
 ```
 
-This will start the Jekyll development server and you can view the site at [http://localhost:4000](http://localhost:4000).
+This will start the Jekyll development server and you can view the site at
+[http://localhost:4000](http://localhost:4000).
 
 You can also build the site without serving it:
 

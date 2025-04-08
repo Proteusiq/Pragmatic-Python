@@ -6,7 +6,7 @@
 # Check if act is installed
 if ! command -v act &> /dev/null; then
   echo "The 'act' tool is not installed. Installing..."
-  
+
   # For macOS (using Homebrew)
   if command -v brew &> /dev/null; then
     brew install act

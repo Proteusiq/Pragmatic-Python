@@ -54,16 +54,16 @@ jobs:
         run: |
           # Install markdownlint-cli2 for auto-fixing capability
           npm install -g markdownlint-cli2
-          
+
           # Auto-fix markdown issues
           markdownlint-cli2 --fix "**/*.md" || true
-          
+
           # Check if there are any changes after auto-fixing
           if [[ -n $(git status --porcelain) ]]; then
             # Configure Git
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
-            
+
             # Commit and push the auto-fixed changes if on main branch
             if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]]; then
               git add .
@@ -73,7 +73,7 @@ jobs:
               echo "::warning::Markdown linting issues were fixed but not pushed (not on main branch)"
             fi
           fi
-          
+
           # Run final check but don't fail the build
           bundle exec mdl . || echo "::warning::Markdown linting found issues that couldn't be auto-fixed"
 
