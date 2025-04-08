@@ -42,6 +42,7 @@ jobs:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
           cache-version: 2
+          cache-version: 2
 
       - name: Install dependencies
         run: |
@@ -51,17 +52,29 @@ jobs:
 
       - name: Run markdown linting with auto-fix
         run: |
-          # First attempt to auto-fix common issues if possible
-          if bundle exec mdl --help | grep -q -- "--auto-correct"; then
-            bundle exec mdl . --auto-correct || true
-          else
-            # Alternative approach using markdownlint-cli2 if installed
-            if command -v markdownlint-cli2 &> /dev/null; then
-              markdownlint-cli2 --fix "**/*.md" || true
+          # Install markdownlint-cli2 for auto-fixing capability
+          npm install -g markdownlint-cli2
+          
+          # Auto-fix markdown issues
+          markdownlint-cli2 --fix "**/*.md" || true
+          
+          # Check if there are any changes after auto-fixing
+          if [[ -n $(git status --porcelain) ]]; then
+            # Configure Git
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            
+            # Commit and push the auto-fixed changes if on main branch
+            if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]]; then
+              git add .
+              git commit -m "Auto-fix markdown linting issues [skip ci]"
+              git push
+            else
+              echo "::warning::Markdown linting issues were fixed but not pushed (not on main branch)"
             fi
           fi
           
-          # Then run a check - only fail if issues couldn't be auto-fixed
+          # Run final check but don't fail the build
           bundle exec mdl . || echo "::warning::Markdown linting found issues that couldn't be auto-fixed"
 
   # Build job
