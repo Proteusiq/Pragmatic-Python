@@ -6,6 +6,7 @@ repos:
     -   id: end-of-file-fixer
     -   id: check-yaml
     -   id: check-added-large-files
+    -   id: check-toml
 
 -   repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.35.0
@@ -22,11 +23,16 @@ repos:
         -   mdformat-frontmatter  # YAML frontmatter
         -   mdformat-footnote  # Footnotes
 
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.5
+    hooks:
+    -   id: ruff
+        args: [--fix]
+    -   id: ruff-format
+
 -   repo: https://github.com/astral-sh/uv-pre-commit
     rev: v0.1.0
     hooks:
-    -   id: pip-compile
-        name: Lock dependencies with uv
-        args: [--upgrade]
-    -   id: pip-sync
+    -   id: uv-sync
         name: Sync dependencies with uv
+        args: [--python-version=3.8, --extras=dev,docs]

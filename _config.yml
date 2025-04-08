@@ -18,3 +18,4 @@ development:
   markdown_linting: true
   pre_commit_hooks: true
   package_manager: uv
+  dependency_management: pyproject.toml
