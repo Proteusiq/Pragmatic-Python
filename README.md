@@ -23,11 +23,10 @@ This book is built using Jekyll and GitHub Pages. The content is written in Mark
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
-3. Create a virtual environment and install dependencies:
+3. Install dependencies with uv sync:
    ```bash
-   uv venv
+   uv sync -e ".[all]"  # Installs all dependency groups in a virtual environment
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   uv pip install -e ".[all]"  # Installs all dependency groups
    ```
 
 4. Install pre-commit hooks (including post-checkout, post-merge, and post-rewrite hooks):
