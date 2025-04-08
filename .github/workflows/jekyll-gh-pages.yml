@@ -43,7 +43,6 @@ jobs:
           bundler-cache: true
           bundler-version: '2.4.22'
           cache-version: 2
-          bundler-version: '2.4.22'
 
       - name: Install dependencies
         run: |
