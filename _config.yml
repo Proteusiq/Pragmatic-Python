@@ -1,6 +1,6 @@
 # Site settings for Pragmatic Python book
 title: Pragmatic Python
-description: A practical guide to Python programming
+description: A pragmatic guide to Python programming
 author: Prayson Wilfred Daniel
 theme: jekyll-theme-cayman
 
@@ -12,11 +12,6 @@ permalink: pretty
 github:
   is_project_page: true
   repository_url: https://github.com/proteusiq/pragmatic-python
-
-# Disable GitHub Metadata API usage completely
-github_metadata:
-  disable: true
-repository: proteusiq/pragmatic-python
 
 # Development settings
 development:
