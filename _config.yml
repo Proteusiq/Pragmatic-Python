@@ -13,6 +13,11 @@ github:
   is_project_page: true
   repository_url: https://github.com/proteusiq/pragmatic-python
 
+# Disable GitHub Metadata API usage
+github_metadata:
+  token: no-token
+repository: proteusiq/pragmatic-python
+
 # Development settings
 development:
   markdown_linting: true
