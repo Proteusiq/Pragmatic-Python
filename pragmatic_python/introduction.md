@@ -4,10 +4,76 @@
 way that is based on practical rather than theoretical considerations. -
 Oxford's Google Dictionary
 
+## Pragmatic Python Code
+
+A journey of becoming Pragmatic Pythonista
+
+````{tab} Terrible
+```python
+from pathlib import Path
+
+
+class DataLoader:
+    def __init__(self, file_path: Path) -> None:
+        self.file_path = file_path
+
+    def load(self) -> str:
+        with open(self.file_path, "r") as file:
+            return file.read()
+
+
+def main() -> None:
+    file_path = Path("README.md")
+    loader = DataLoader(file_path)
+    data = loader.load()
+    print(data)
+
+
+if __name__ == "__main__":
+    main()
+```
+````
+````{tab} Better
+```python
+from pathlib import Path
+
+
+def load(file_path: Path) -> str:
+    with open(file_path, "r") as file:
+        return file.read()
+
+
+def main() -> None:
+    file_path = Path("README.md")
+    data = load(file_path)
+    print(data)
+
+
+if __name__ == "__main__":
+    main()
+```
+````
+````{tab} Pragmatic
+```python
+from pathlib import Path
+
+
+def main() -> None:
+    file_path = Path("README.md")
+    data: str = file_path.read_text()
+    print(data)
+
+
+if __name__ == "__main__":
+    main()
+```
+````
+
 Python’s got a million ways to write code—functional, OOP, whatever. A pragmatic
 mindset says, I don’t care about the paradigm fetish. I care about code that
 works, changes without a meltdown, and doesn’t make onboarding a nightmare. If I
 can’t understand and test it in ten minutes, it’s trash.
+
 
 #### Leaving the Basic Behind: Project Structure & Environments
 
@@ -29,6 +95,6 @@ can’t understand and test it in ten minutes, it’s trash.
 
 
 ```{note}
-Thinks Like A Dane!
+Think Like A Dane!
 ```
 

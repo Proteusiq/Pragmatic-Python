@@ -775,12 +775,14 @@ source = { virtual = "." }
 dependencies = [
     { name = "ghp-import" },
     { name = "jupyter-book" },
+    { name = "sphinx-inline-tabs" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "ghp-import", specifier = ">=2.1.0" },
     { name = "jupyter-book", specifier = ">=1.0.4.post1" },
+    { name = "sphinx-inline-tabs", specifier = ">=2023.4.21" },
 ]
 
 [[package]]
@@ -1236,6 +1238,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d7/b3/e900bcbb9d0071b928991e00ea70b3e6c6dd774dcf906c043c500e61584c/sphinx_external_toc-1.0.1.tar.gz", hash = "sha256:a7d2c63cc47ec688546443b28bc4ef466121827ef3dc7bb509de354bad4ea2e0", size = 32755 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5f/9a/cb412957424012869b43a5aa3d95ccebcac737dafc5a545ce15bb8037f6e/sphinx_external_toc-1.0.1-py3-none-any.whl", hash = "sha256:d9e02d50731dee9697c1887e4f8b361e7b86d38241f0e66bd5a9f4096779646f", size = 26677 },
+]
+
+[[package]]
+name = "sphinx-inline-tabs"
+version = "2023.4.21"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/48/f5/f8a2be63ed7be9f91a4c2bea0e25bcb56aa4c5cc37ec4d8ead8065f926b1/sphinx_inline_tabs-2023.4.21.tar.gz", hash = "sha256:5df2f13f602c158f3f5f6c509e008aeada199a8c76d97ba3aa2822206683bebc", size = 42664 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9d/60/1e4c9017d722b9c7731abc11f39ac8b083b479fbcefe12015b57e457a296/sphinx_inline_tabs-2023.4.21-py3-none-any.whl", hash = "sha256:06809ac613f7c48ddd6e2fa588413e3fe92cff2397b56e2ccf0b0218f9ef6a78", size = 6850 },
 ]
 
 [[package]]
