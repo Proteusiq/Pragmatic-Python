@@ -2,7 +2,9 @@
 title: Pragmatic Python
 description: A pragmatic guide to Python programming
 author: Prayson Wilfred Daniel
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
 
 # Build settings
 markdown: kramdown

@@ -106,6 +106,7 @@ jobs:
           JEKYLL_ENV: production
           JEKYLL_NO_GITHUB_API: true
           PAGES_REPO_NWO: 'proteusiq/pragmatic-python'
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test build output
         run: |
