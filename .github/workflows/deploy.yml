@@ -1,10 +1,10 @@
 name: deploy-book
 
 on:
-  # Trigger the workflow on push to main branch
+  # Trigger the workflow on push to novibe branch
   push:
     branches:
-      - main
+      - novibe
 
 # Default configurations
 defaults:
