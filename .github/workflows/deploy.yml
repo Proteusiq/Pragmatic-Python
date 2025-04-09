@@ -51,7 +51,7 @@ jobs:
         shell: bash
       # Build the book
       - name: Build the book
-        run: jupyter-book build pragmatic_python
+        run: uv run jupyter-book build pragmatic_python
 
       # Upload the book's HTML as an artifact
       - name: Upload artifact
