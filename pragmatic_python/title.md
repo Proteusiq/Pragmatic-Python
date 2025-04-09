@@ -1,5 +1,5 @@
 # Pragmatic Python
-> Friends Don't Let Friends Write Mediocre 
+> Friends Don't Let Friends Write Mediocre Code 
 
 # Pragmatic Mindset
 
