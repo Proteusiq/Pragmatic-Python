@@ -15,5 +15,4 @@ anti-pragmatic). It’s for my book, Pragmatic Python, of course.
 Contents:
 
 ```{tableofcontents}
-Leaving the Basic Behind: Project Structure & Environments
 ```
