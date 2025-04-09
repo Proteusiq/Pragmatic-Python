@@ -1,7 +1,7 @@
-# Pragmatic Python
+#### Pragmatic Python
 > Friends Don't Let Friends Write Mediocre Code 
 
-## Pragmatic Mindset
+###### Pragmatic Mindset
 
 `/praɡˈmatɪk/` _adjective_ - dealing with things sensibly and realistically in a
 way that is based on practical rather than theoretical considerations. -
@@ -79,7 +79,7 @@ can’t understand and test it in ten minutes, it’s trash.
 
 
 
-## Are You Still My Friend?
+###### Are You Still My Friend?
 
 So, you’re pragmatic, eh? Then you are still my friend. Pragmatic Python is a book my alter-ego always wanted
 to write to my democratic self. It is fiercely opinionated way to programming
@@ -87,7 +87,7 @@ with Python.  It is a way for  a friend, opinonated one, who don't let friends w
 
 
 
-## Who I am? Your Friend, Silly.
+###### Who I am? Your Friend, Silly.
 I’m Prayson Wilfred Daniel, Principal Data Scientist at `_42`, and I’ve written mediocre codea. I got sick of rewrites, so I flipped the script. Now, I build solutions that `suck-less`: community-driven and design patterns-ish that make code easy to change, test, and onboard. CI/CD testing? Mandatory—I have been tested. This is my Arrange, Act, and Assert book.
 
 I ditched `pandas` bloat for `polars`, `requests` for `httpx`, `unittest` for `pytest`. Legacy’s dead; `uv` and `ruff` run my show. This book’s my alter-ego's fight—pragmatic, no-BS code that works. Friends don’t let friends settle for less. I bring a hefty dose of Danish sarcasm to the table and don’t take everything too seriously—because, let’s be real, religiously following ideas, best practices, design patterns or rules is a total buzzkill (and frankly anti-pragmatic). It’s for my book, Pragmatic Python, of course.
