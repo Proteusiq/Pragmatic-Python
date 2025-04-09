@@ -1,6 +1,10 @@
 version: 1
 project:
   title: Pragmatic Python
+  description: Friends Don’t Let Friends Write Mediocre Code
+  keywords:
+    - python
+    - design pattern
   authors:
     - name: Prayson Wilfred Daniel
   copyright: '2025'
@@ -12,11 +16,12 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
   toc:
-    - file: title.md
-    - file: introduction.md
-    - file: 01_beginning.md
+    - file: chapters/title.md
+      title: Introduction
+    - file: chapters/roadmap.md
+    - file: chapters/01_beginning.md
 site:
   options:
-    logo: logo.png
+    logo: assets/logo.png
     folders: true
   template: book-theme
