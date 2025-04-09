@@ -6,6 +6,11 @@ on:
     branches:
       - main
 
+# Default configurations
+defaults:
+  run:
+    shell: bash
+
 env:
   BASE_URL: /${{ github.event.repository.name }}
   PYTHON_VERSION: "3.12"
