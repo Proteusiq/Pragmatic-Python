@@ -1,6 +1,6 @@
-### Pragmatic Mindset
+# Pragmatic Mindset
 
-/praɡˈmatɪk/ _adjective_ - dealing with things sensibly and realistically in a
+`/praɡˈmatɪk/` _adjective_ - dealing with things sensibly and realistically in a
 way that is based on practical rather than theoretical considerations. -
 Oxford's Google Dictionary
 
@@ -11,7 +11,7 @@ can’t understand and test it in ten minutes, it’s trash.
 
 #### Leaving the Basic Behind: Project Structure & Environments
 
-#### Topics
+#### Sections
 
 - Friends Don’t Let Friends Skip Git: Commit or Quit: No Version Control, No
   Mercy
@@ -26,3 +26,9 @@ can’t understand and test it in ten minutes, it’s trash.
 - Friends Don’t Let Friends Ship Untyped Code
 - Friends Don’t Let Friends Reinvent Wheels
 - Friends Don’t Let Friends Waste Time on Formatting Debates
+
+
+```{note}
+Thinks Like A Dane!
+```
+
