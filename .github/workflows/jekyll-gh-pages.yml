@@ -101,10 +101,10 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --verbose
         env:
           JEKYLL_ENV: production
-          DISABLE_GITHUB_API: true
+          JEKYLL_NO_GITHUB_API: true
           PAGES_REPO_NWO: 'proteusiq/pragmatic-python'
 
       - name: Test build output
