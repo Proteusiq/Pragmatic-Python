@@ -74,7 +74,6 @@ if __name__ == "__main__":
 ```
 ::::
 
-::::
 
 Python’s got a million ways to write code—functional, OOP, whatever. A pragmatic
 mindset says, I don’t care about the paradigm fetish. I care about code that
