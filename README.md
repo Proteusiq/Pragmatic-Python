@@ -28,41 +28,9 @@ The site is automatically built and deployed using GitHub Actions.
    cd Pragmatic-Python
    ```
 
-1. Install Ruby dependencies:
-
-   ```bash
-   # Install Bundler if not already installed
-   gem install bundler --user-install
-
-   # Install project dependencies
-   bundle install --path vendor/bundle
-   ```
-
-1. Install uv (if not already installed):
 
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
-   ```
-
-1. Install Python dependencies with uv sync:
-
-   ```bash
-   uv sync --all-extra  # Installs all dependency groups in a virtual environment
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   ```
-
-1. Install pre-commit hooks (including post-checkout, post-merge, and
-   post-rewrite hooks):
-
-   ```bash
-   pre-commit install --install-hooks -t pre-commit -t post-checkout -t post-merge -t post-rewrite
-   ```
-
-1. Install markdown linting tool (optional):
-
-   ```bash
-   # Install with user permissions to avoid permission errors
-   gem install mdl --user-install
    ```
 
 ### Writing Content
@@ -84,23 +52,10 @@ like:
 - Deployment best practices
 - Documentation strategies
 
-### Local Preview
-
-To preview the book locally, run:
-
-```bash
-bundle exec jekyll serve
-```
-
-This will start the Jekyll development server and you can view the site at
-[http://localhost:4000](http://localhost:4000).
 
 Other useful commands:
 
 ```bash
-# Format markdown files
-bun run format
-
 # Run LanguageTool for grammar checking
 docker run --rm -p 8010:8010 erikvl87/languagetool
 ```
@@ -117,7 +72,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for
+This project is licensed under the Prayson's License - see the LICENSE file for
 details.
 
 © 2025 Prayson Wilfred Daniel. All rights reserved.
