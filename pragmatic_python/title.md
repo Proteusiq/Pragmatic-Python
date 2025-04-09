@@ -1,7 +1,7 @@
-# Pragmatic Python
+#### Pragmatic Python
 > Friends Don't Let Friends Write Mediocre Code 
 
-# Pragmatic Mindset
+#### Pragmatic Mindset
 
 `/praɡˈmatɪk/` _adjective_ - dealing with things sensibly and realistically in a
 way that is based on practical rather than theoretical considerations. -
@@ -77,7 +77,7 @@ can’t understand and test it in ten minutes, it’s trash.
 
 
 
-## Are You Still My Friend?
+#### Are You Still My Friend?
 
 So, you’re pragmatic, eh? Then you are still my friend. Pragmatic Python is a book my alter-ego always wanted
 to write to my democratic self. It is fiercely opinionated way to programming
