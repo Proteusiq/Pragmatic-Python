@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - novibe
+  # Allow manual triggering of the workflow
+  workflow_dispatch:
 
 # Default configurations
 defaults:
