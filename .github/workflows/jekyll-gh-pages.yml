@@ -13,11 +13,8 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# Use default permissions for GITHUB_TOKEN
+permissions: {}
 
 env:
   RUBY_VERSION: '3.2.2'
