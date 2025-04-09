@@ -9,9 +9,9 @@ Oxford's Google Dictionary
 
 Mediocre code sucks—I’ve been there. I’ve written it. I’ve reviewed worse. Picture a chump—me—hammering out scripts with no tests, `pip install` chaos, and prayers to the gods of bytes it’d run on someone else’s rig. The journey to pragmatism? It’s me, fed up with endless rewrites, saying ‘no more.’
 
-Mediocre code isn’t GPT-3.5’s word-salad disaster—it’s just code I can’t stand. Yeah, I said it. My case for pragmatism’s here to make you hate it too. It is okay, to disagree. I expect you to disagree in some cases. It means, you are Pragmatic after-all. 
+Mediocre code isn’t GPT-3.5’s word-salad disaster—it’s just code I can’t stand. Yeah, I said it. My case for pragmatism’s here to make you hate it too. It is okay, to disagree. I expect you to disagree in some cases. It means, you are Pragmatic after-::::{tab-set}
 
-````{tab} Terrible
+::::{tab-item} Terrible
 ```python
 from pathlib import Path
 
@@ -35,8 +35,9 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
-````
-````{tab} Better
+::::
+
+::::{tab-item} Better
 ```python
 from pathlib import Path
 
@@ -55,8 +56,9 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
-````
-````{tab} Pragmatic
+::::
+
+::::{tab-item} Pragmatic
 ```python
 from pathlib import Path
 
@@ -70,7 +72,9 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
-````
+::::
+
+::::
 
 Python’s got a million ways to write code—functional, OOP, whatever. A pragmatic
 mindset says, I don’t care about the paradigm fetish. I care about code that
