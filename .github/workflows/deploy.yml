@@ -4,7 +4,7 @@ on:
   # Trigger the workflow on push to novibe branch
   push:
     branches:
-      - novibe
+      - main
   # Allow manual triggering of the workflow
   workflow_dispatch:
 
