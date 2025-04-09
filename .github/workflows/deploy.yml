@@ -44,6 +44,14 @@ jobs:
         with:
           uv-version: ${{ env.UV_VERSION }}
         
+      - name: Debug directory structure
+        run: |
+          pwd
+          ls -la
+          echo "---"
+          cat pyproject.toml
+        shell: bash
+        
       - name: Install dependencies
         run: uv sync
         shell: bash
