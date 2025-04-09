@@ -104,7 +104,7 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-          JEKYLL_GITHUB_TOKEN: 'no-token'
+          DISABLE_GITHUB_API: true
           PAGES_REPO_NWO: 'proteusiq/pragmatic-python'
 
       - name: Test build output

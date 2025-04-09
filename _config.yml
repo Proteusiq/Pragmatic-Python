@@ -13,9 +13,9 @@ github:
   is_project_page: true
   repository_url: https://github.com/proteusiq/pragmatic-python
 
-# Disable GitHub Metadata API usage
+# Disable GitHub Metadata API usage completely
 github_metadata:
-  token: no-token
+  disable: true
 repository: proteusiq/pragmatic-python
 
 # Development settings
