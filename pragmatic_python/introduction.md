@@ -6,7 +6,7 @@ Oxford's Google Dictionary
 
 ## Pragmatic Python Code
 
-First two tabs showing off defining a function.
+A journey of becoming Pragmatic Pythonista
 
 ````{tab} Terrible
 ```python
