@@ -6,6 +6,16 @@ on:
     branches:
       - main
 
+inputs:
+  python-version:
+    description: "Python version to use"
+    required: true
+    default: "3.12"
+  uv-version:
+    description: "uv version to use"
+    required: true
+    default: "0.5.9"
+
 env:
   BASE_URL: /${{ github.event.repository.name }}
 
@@ -23,22 +33,19 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ inputs.python-version }}
 
       # Install dependencies
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Python and uv
+        uses: astral-sh/setup-uv@v2
         with:
-          python-version: "3.11"
-        
-      - name: Install uv
-        run: |
-          curl -LsSf https://astral.sh/uv/install.sh | sh
-          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+          python-version:  ${{ inputs.uv-version }}
         
       - name: Install dependencies
         run: uv sync
-
+        shell: bash
       # Build the book
       - name: Build the book
         run: jupyter-book build pragmatic_python
