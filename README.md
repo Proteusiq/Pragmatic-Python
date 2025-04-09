@@ -52,12 +52,6 @@ like:
 - Deployment best practices
 - Documentation strategies
 
-### Local Preview
-
-To preview the book locally, run:
-
-This will start the Jekyll development server and you can view the site at
-[http://localhost:4000](http://localhost:4000).
 
 Other useful commands:
 
