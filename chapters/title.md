@@ -8,7 +8,7 @@ Oxford's Google Dictionary
 
 Mediocre code sucks—I’ve been there. I’ve written it. I’ve reviewed worse. Picture a chump—me—hammering out scripts with no tests, `pip install` chaos, and prayers to the gods of bytes it’d run on someone else’s machine. The journey to pragmatism? It is me, fed up with endless rewrites, saying ‘no more.’
 
-Mediocre code is not GPT-3.5’s word-salad disaster—it is just code I can not stand. Yeah, I said it. My case for pragmatism is here to make you hate it too. It is okay to disagree. In fact, I expect you to disagree in some cases. It means you are Pragmatic after all.
+Mediocre code is not GPT-3.5’s vibe-salad disaster—it is just code I can not stand. Yeah, I said it. My case for pragmatism is here to make you hate it too. It is okay to disagree. In fact, I expect you to disagree in some cases. It means you are Pragmatic after all.
 
  `````{tab-set}
 ````{tab-item} Terrible
