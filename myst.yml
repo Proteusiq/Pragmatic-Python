@@ -22,6 +22,7 @@ project:
     - file: chapters/01_beginning.md
 site:
   options:
+    favicon: favicon.ico
     logo: assets/logo.png
     folders: true
   template: book-theme
