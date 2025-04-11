@@ -10,6 +10,11 @@ Mediocre code sucks—I’ve been there. I’ve written it. I’ve reviewed wors
 
 Mediocre code is not GPT-3.5’s vibe-salad disaster—it is just code I can not stand. Yeah, I said it. My case for pragmatism is here to make you hate it too. It is okay to disagree. In fact, I expect you to disagree in some cases. It means you are Pragmatic after all.
 
+This book is meant to drag mediocre code into the light. Showing you a path from mediocracy to pragmatism in `Terrible`, `Better` and `Pragmatic`, learnt from many hours spent in experimenting, studying, debugging, and making dozens of mistakes.
+
+`Example I:`
+OOP to functional to nothing. 
+
  `````{tab-set}
 ````{tab-item} Terrible
 
@@ -40,7 +45,7 @@ if __name__ == "__main__":
 
 ````{tab-item} Better
 
-```{code-block} pythonpython
+```{code-block} python
 from pathlib import Path
 
 
@@ -76,12 +81,83 @@ if __name__ == "__main__":
 ```
 ````
  `````
+`Example II:`
+Take word-counting: I used to cobble together if-else messes, reinventing the wheel like a rookie. Then I stumbled on stdlib `defaultdict` —simpler, less embarrassing, but still yet not pragmatic. Enter `Counter`: one clean stdlib line that does it right. It’s not about being clever—it’s about simple. Master stdlib, and you’ll stop writing junk.
 
-We can write Python code in a million ways -OOP, functional, or what have you. A pragmatic mindset says, I don’t care about the paradigm fetish. I care about code that
-works, changes without a meltdown, and doesn’t make onboarding a nightmare. If I
-can’t understand and test it in ten minutes, it’s trash.
+ `````{tab-set}
+````{tab-item} Terrible
+
+```{code-block} python
+from typing import Iterable 
 
 
+def get_word_counts(words: Iterable[str]) -> dict[str, int]:
+    word_counts = {}
+
+    for word in words: 
+        if word in word_counts:
+            word_counts[word] += 1
+        else:
+            word_counts[word] = 1
+    
+    return word_counts
+
+
+if __name__ == "__main__":
+    from pathlib import Path
+
+    words = iter(Path("README.md").read_text().lower().split())
+    print(get_word_counts(words=words))
+
+```
+````
+
+````{tab-item} Better
+
+```{code-block} python
+from collections import defaultdict
+from typing import Iterable 
+
+
+def get_word_counts(words: Iterable[str]) -> dict[str, int]:
+    word_counts = defaultdict(int)
+
+    for word in words:
+        word_counts[word] += 1
+
+    return dict(word_counts)
+
+
+if __name__ == "__main__":
+    from pathlib import Path
+
+    words = iter(Path("README.md").read_text().lower().split())
+    print(get_word_counts(words=words))
+
+```
+````
+
+````{tab-item} Pragmatic
+```{code-block} python
+from collections import Counter
+from typing import Iterable 
+
+
+def get_word_counts(words: Iterable[str]) -> dict[str, int]:
+    word_counts = Counter(words)
+
+    return dict(word_counts)
+
+
+if __name__ == "__main__":
+    from pathlib import Path
+
+    words = iter(Path("README.md").read_text().lower().split())
+    print(get_word_counts(words=words))  
+```
+````
+ `````
+We can write Python code in a million ways -OOP, functional, or what have you. A pragmatic mindset says, I don’t care about the paradigm fetish. I care about code that works, changes without a meltdown, and doesn’t make onboarding a nightmare. If I can’t understand and test it in ten minutes, it’s trash.
 
 ###### Are You Still My Friend?
 
