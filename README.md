@@ -19,23 +19,25 @@ This book is built using Jekyll and GitHub Pages. The content is written in
 Markdown and automatically published when changes are pushed to the main branch.
 The site is automatically built and deployed using GitHub Actions.
 
-### Setup Development Environment
+### Setup Development environments
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Proteusiq/Pragmatic-Python.git
-   cd Pragmatic-Python
-   ```
-
-
+uv for environments.   
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
+Clone the repository:
+
+   ```bash
+   git clone https://github.com/Proteusiq/Pragmatic-Python.git
+   cd Pragmatic-Python
+   uv run jupyter book start
+   ```
+
+
 ### Writing Content
 
-Content is organized in the `docs/` directory. Each chapter is a separate
+Content is organized in the `chapters/` directory. Each chapter is a separate
 Markdown file.
 
 The book follows the "Friends Don't Let Friends..." format, covering topics
@@ -56,7 +58,7 @@ like:
 Other useful commands:
 
 ```bash
-# Run LanguageTool for grammar checking
+# Run LanguageTool for grammar checking Obsidian
 docker run --rm -p 8010:8010 erikvl87/languagetool
 ```
 
