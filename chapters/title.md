@@ -10,7 +10,7 @@ Mediocre code sucks—I’ve been there. I’ve written it. I’ve reviewed wors
 
 Mediocre code is not GPT-3.5’s vibe-salad disaster—it is just code I can not stand. Yeah, I said it. My case for pragmatism is here to make you hate it too. It is okay to disagree. In fact, I expect you to disagree in some cases. It means you are Pragmatic after all.
 
-This book is meant to drag mediocre code into the light. Showing you a path from mediocracy to pragmatism in `Terrible`, `Better` and `Pragmatic`, learnt from many hours spent in experimenting, studying, debugging, and making dozens of mistakes.
+This book is meant to drag mediocre code into the light. Showing you a path from mediocracy to pragmatism in `Terrible`, `Better` and `Pragmatic`, learnt from many hours spent experimenting, studying, debugging, and making dozens of mistakes.
 
 `Example I:`
 OOP to functional to nothing. 
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 ````
  `````
 `Example II:`
-Take word-counting: I used to cobble together if-else messes, reinventing the wheel like a rookie. Then I stumbled on stdlib `defaultdict` —simpler, less embarrassing, but still yet not pragmatic. Enter `Counter`: one clean stdlib line that does it right. It’s not about being clever—it’s about simple. Master stdlib, and you’ll stop writing junk.
+Take word-counting: I used to cobble together if-else messes, reinventing the wheel like a rookie. Then I stumbled on stdlib `defaultdict` —simpler, less embarrassing, but still yet not pragmatic. Enter `Counter`: one clean stdlib line that does it right. It’s not about being clever—it’s about being simple. Master stdlib, and you’ll stop writing junk.
 
  `````{tab-set}
 ````{tab-item} Terrible
