@@ -1,7 +1,5 @@
 # Road Map
 
-# Road Map
-
 - [ ] Leaving the Basic Behind: Project Structure & Environments  
   - [ ] Structure Like You Mean It – Friends Don't Let Friends Mess with System Paths  
   - [ ] Commit or Quit: No Version Control, No Mercy – Friends Don’t Let Friends Skip Git
@@ -17,6 +15,7 @@
 - [ ] Friends Don’t Let Friends Ship Untyped Code  
 - [ ] Friends Don’t Let Friends Reinvent Wheels  
 - [ ] Friends Don’t Let Friends Waste Time on Formatting Debates
+
 ```{note}
 Think Like A Dane!
 ```
