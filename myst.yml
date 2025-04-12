@@ -16,7 +16,7 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
   toc:
-    - file: chapters/title.md
+    - file: chapters/preface.md
       title: Introduction
     - file: chapters/roadmap.md
     - file: chapters/01_beginning.md
