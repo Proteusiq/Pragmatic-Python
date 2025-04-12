@@ -67,9 +67,9 @@ docker run --rm -p 8010:8010 erikvl87/languagetool
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
-1. Create your feature branch (`git checkout -b feature/amazing-feature`)
-1. Commit your changes (`git commit -m 'Add some amazing feature'`)
-1. Push to the branch (`git push origin feature/amazing-feature`)
+1. Create your typos branch (`git checkout -b typos/fix-typo`)
+1. Commit your changes (`git commit -m 'Correct some typo'`)
+1. Push to the branch (`git push origin typos/fix-typo`)
 1. Open a Pull Request
 
 ## License
