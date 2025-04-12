@@ -10,7 +10,7 @@ Mediocre code sucks—I’ve been there. I’ve written it. I’ve reviewed wors
 
 Mediocre code is not GPT-3.5’s vibe-salad disaster—it is just code I can not stand. Yeah, I said it. My case for pragmatism is here to make you hate it too. It’s okay to disagree; in fact, I expect you to in some cases. It means you’re pragmatic after all.
 
-This book is meant to drag mediocre code into the light. Showing you a path from mediocracy to pragmatism in `Terrible`, `Better` and `Pragmatic`, learnt from many hours spent reading, writing, debugging, reviewing, experimenting and making dozens of mistakes building Python solutions.
+This book is meant to drag mediocre code into the light, showing you a path from mediocrity to pragmatism through `Terrible`, `Better`, and `Pragmatic`. It draws on lessons learned from hours spent reading, writing, debugging, reviewing, experimenting, and making dozens of mistakes while building Python solutions.
 
 `Example I:`
 OOP to functional to nothing. 
