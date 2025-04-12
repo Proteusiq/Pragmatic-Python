@@ -15,7 +15,7 @@ anti-pragmatic). It’s for my book, Pragmatic Python, of course.
 
 ## Development
 
-This book is built using Jekyll and GitHub Pages. The content is written in
+This book is built using Jupyter Book II and GitHub Pages. The content is written in
 Markdown and automatically published when changes are pushed to the main branch.
 The site is automatically built and deployed using GitHub Actions.
 
