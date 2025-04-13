@@ -21,7 +21,7 @@ You are in WC, our favourite quiet office room,  picture this, the toilet paper 
 
 A Python project is no different. Misplace a file, and you are out of control: bugs creep, shipping stalls, your reputation tanks, production costs skyrocket. A pragmatic project structure means it is ETC—easy to change, test, onboard. It puts you in charge. No hunting, no cursing. 
 
-Use `uv init --lib` and two `SOLID` principles—`Single Responsibility (S)` and `Dependency Inversion (D)`—to craft a system as tight as a Copenhagen kitchen. Yes, you heard me correct, principles also applies to our project structure as much as they apply to the code we write.
+Use `uv init --lib` and two `SOLID` principles—`Single Responsibility (S)` and `Dependency Inversion (D)`—to craft a system as tight as a Copenhagen kitchen. Yes, you heard me correct, design principles do also apply to project structure as much as they do in the code we write.
 
 ##### 1.2 Setp 1: Clean Slate - `uv init --lib`
 
