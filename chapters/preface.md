@@ -13,7 +13,7 @@ Mediocre code is not GPT-3.5’s vibe-salad disaster—it is just code I can not
 This book is meant to drag mediocre code into the light, showing you a path from mediocrity to pragmatism through `Terrible`, `Better`, and `Pragmatic`. It draws on lessons learned from hours spent reading, writing, debugging, reviewing, experimenting, and making dozens of mistakes while building Python solutions.
 
 `Example I:`
-OOP to functional to nothing. 
+OOP to functional to nothing. Sometimes, no code is the best code. 
 
  `````{tab-set}
 ````{tab-item} Terrible

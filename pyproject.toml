@@ -7,3 +7,9 @@ requires-python = ">=3.11"
 dependencies = [
     "jupyter-book>=2.0.0a0",
 ]
+
+[dependency-groups]
+qa = [
+    "pytest>=8.3.5",
+    "ruff>=0.11.5",
+]
