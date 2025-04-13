@@ -17,7 +17,7 @@ This chapter is about structure: code and project, built for ETC—easy to chang
 
 ##### 1.1 Structure is Your Danish Kontrol
 
-You are in WC, our favourite quiet office room,  picture this, the toilet paper is across the room. You reach for it—shit gets messy, literally. That is code without structure. In a Danish flat, the bin is under the kitchen sink, milk is on the fridge door, butter is in its slot—order kills chaos. Danes are busy being happy. No time for messy.
+You are in WC, our favourite quiet office room,  picture this, the toilet paper is across the room. You reach for it—shit gets messy, literally. That is code without structure. In a Danish flat, the bin is under the kitchen sink, milk is on the fridge door, butter is in its slot—order kills chaos. Danes are busy being happy. No time for _rod_.
 
 A Python project is no different. Misplace a file, and you are out of control: bugs creep, shipping stalls, your reputation tanks, production costs skyrocket. A pragmatic project structure means it is ETC—easy to change, test, onboard. It puts you in charge. No hunting, no cursing. 
 
