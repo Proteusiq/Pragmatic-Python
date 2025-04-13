@@ -13,7 +13,7 @@ Stick with `uv` or `pixi`, and you’ll thank me later.
   
 If you are battling circular imports or shoving `sys.path` hack to make your code run, congrats—you are slinging mediocre joker code—pure clown project structure so tangled, it would make Danes yeet their Carlsberg.
 
-This chapter is about structure: code and project, built for ETC—easy to change, test, onboard. Why? Control. A pragmatic designed system keeps bugs, delays, and costs from screwing your reputation and your company, a distance. Like milk on the fridge door or the trash bin under the kitchen's sink, everything ought to be where it belongs—because losing control’s not an option.
+This chapter is about structure: code and project, built for ETC—easy to change, test, onboard. Why? Control. A pragmatic designed system keeps bugs, delays, and costs from screwing your reputation and your company, a distance. Like milk on the fridge door or the trash bin under the kitchen's sink, everything ought to be where it belongs—because losing control is not an option.
 
 ##### 1.1 Structure is Your Danish Kontrol
 
