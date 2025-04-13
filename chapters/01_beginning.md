@@ -3,7 +3,7 @@
 ```{note}
 # Pragmatic Python Package Managers
 
-Forget juggling [`poetry`](https://python-poetry.org/) and [`pyenv`](https://github.com/pyenv/pyenv). The future is [`uv`](https://docs.astral.sh/uv/), a complete, pragmatic, all-in-one solution for Python’s ecosystem. One ring to rule them all. If your organization is bound to the [`conda`](https://docs.conda.io/) ecosystem, go for [`pixi`](https://pixi.sh/).
+Forget juggling [`poetry`](https://python-poetry.org/) and [`pyenv`](https://github.com/pyenv/pyenv). The future is [`uv`](https://docs.astral.sh/uv/), a complete, pragmatic, all-in-one solution for Python’s ecosystem. It is the one ring to rule them all. If your organization is married to the [`conda`](https://docs.conda.io/) ecosystem, go for [`pixi`](https://pixi.sh/).
 
 Stick with `uv` or `pixi`, and you’ll thank me later.
 ```
