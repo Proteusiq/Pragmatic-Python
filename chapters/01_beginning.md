@@ -276,10 +276,10 @@ _`Se mor, det virker!`_ Our `api` is up, nudging books like a charm, no `lort` i
 
 ##### 1.4 Step 3: D and I — Don’t Touch the Milk 
 
-`Dependency Inversion (D)`—high-level modules shouldn’t cling to low-level ones, both should lean on abstractions—says layers don’t own each other; they ask politely. 
+`Dependency Inversion (D)`— says high-level modules shouldn’t cling to low-level ones, both should lean on abstractions—it says layers don’t own each other; they ask politely. 
 
-In `nudge`, our `routes` in `nudge.app.api.routes.recommender` shouldn’t dig into the guts of `nudge.recommender`, like you don’t move someone’s milk to get your cheese. Instead, we use a contract: `routes` expect `nudge.app.services`, not a specific file. 
+In `nudge`, our `routes` shouldn’t dig into the guts of `nudge.recommender`, like you don’t move someone’s milk to get your cheese. Instead, it should use a contract: `services`. 
 
-Our `services.recommender` creates the brigde to `nudge.recommender` if needed. This cuts ties, between our recommender and routes, making ETC sing: swap the `nudge.recommender`, `routes` don’t care; mock services for tests; onboard with “this plugs in here.” A nod to `Interface Segregation (I)` keeps it tighter—`routes` only sees the methods it uses, no bloated baggage.
+Our `services` creates the brigde to core functionality, `nudge.recommender`. This cuts ties, between our core `recommender` and api's `routes`, making ETC sing: swap the `nudge.recommender`, `routes` don’t care; mock services for tests; onboard with “this plugs in here.” A nod to `Interface Segregation (I)` keeps it tighter—`routes` only sees the methods it uses, no bloated baggage.
 
 Did I lose you? It is okay to be lost. 
