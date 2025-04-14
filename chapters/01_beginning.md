@@ -23,7 +23,7 @@ A Python project is no different. Misplace a file, and you are out of control: b
 
 Use `uv init --lib` and `SOLID` principles—`Single Responsibility (S)`, `Dependency Inversion (D)` and `Interface Segregation` —to craft a system as tight as a Copenhagen kitchen. Yes, you heard me correct, principles also applies to our project structure as much as they apply to the code we write.
 
-##### 1.2 Setp 1: Clean Slate - `uv init --lib nudge`
+##### 1.2 Step 1: Clean Slate - `uv init --lib nudge`
 
 ###### Building `nudge`: A Pragmatic Book Recommender
 
