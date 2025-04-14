@@ -263,7 +263,7 @@ tests/test_recommender.py::test_recommend PASSED                                
 uv run fastapi dev src/nudge/app/main.py
 ````
 `````
-_Se mor, det virker!_ Our `api` is up, nudging books like a charm, no `lort` in sight. Folders know their roles, like milk on the fridge door. Built clean, built right—pragmatic all the way.
+_`Se mor, det virker!`_ Our `api` is up, nudging books like a charm, no `lort` in sight. Folders know their roles, like milk on the fridge door. Built clean, built right—pragmatic all the way.
 
 
 
@@ -276,10 +276,10 @@ _Se mor, det virker!_ Our `api` is up, nudging books like a charm, no `lort` in 
 
 ##### 1.4 Step 3: D and I — Don’t Touch the Milk 
 
-Dependency Inversion (D)`—high-level modules shouldn’t cling to low-level ones, both should lean on abstractions—says layers don’t own each other; they ask politely. 
+`Dependency Inversion (D)`—high-level modules shouldn’t cling to low-level ones, both should lean on abstractions—says layers don’t own each other; they ask politely. 
 
-In `nudge`, our `routes` in `src/nudge/app/api/routes/recommender.py` shouldn’t dig into the guts of `src/nudge/recommender.py`, like you don’t move someone’s milk to get your cheese. Instead, we use a contract: `routes` expect `nudge.app.services`, not a specific file. 
+In `nudge`, our `routes` in `nudge.app.api.routes.recommender` shouldn’t dig into the guts of `nudge.recommender`, like you don’t move someone’s milk to get your cheese. Instead, we use a contract: `routes` expect `nudge.app.services`, not a specific file. 
 
-Our `services/recommender.py` creates the brigde to `nudge.recommender` if needed. This cuts ties, between our recommender and routes, making ETC sing: swap the `nudge.recommender`, `routes` don’t care; mock services for tests; onboard with “this plugs in here.” A nod to `Interface Segregation (I)` keeps it tighter—`routes` only sees the methods it uses, no bloated baggage.
+Our `services.recommender` creates the brigde to `nudge.recommender` if needed. This cuts ties, between our recommender and routes, making ETC sing: swap the `nudge.recommender`, `routes` don’t care; mock services for tests; onboard with “this plugs in here.” A nod to `Interface Segregation (I)` keeps it tighter—`routes` only sees the methods it uses, no bloated baggage.
 
 Did I lose you? It is okay to be lost. 
