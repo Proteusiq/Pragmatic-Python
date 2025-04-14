@@ -4,9 +4,12 @@
   - [X] Structure Like You Mean It – Friends Don't Let Friends Mess with System Paths  
   - [X] Commit or Quit: No Version Control, No Mercy – Friends Don’t Let Friends Skip Git
 
-- [ ] Use the Damn Stdlib: Stop Coding Like It’s 1999 – Friends Don’t Let Friends Reinvent Wheels
 
 - [ ] Test or Regret: Bugs Don’t Fix Themselves – Friends Don’t Let Friends Ship Without Tests
+TDD done correctly: Answer the objection from Pragmatic Programming.
+
+- [ ] Use the Damn Stdlib: Stop Coding Like It’s 1999 – Friends Don’t Let Friends Reinvent Wheels
+
 
 - [ ] Keep It Simple, Genius: Your Classes Doesn’t Impress Me – Friends Don’t Let Friends Overcomplicate with OOP
 
