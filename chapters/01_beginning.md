@@ -1,4 +1,4 @@
-# Leaving the Basic Behind
+## Leaving the Basic Behind
 
 ```{note}
 # Pragmatic Python Package Managers
@@ -285,3 +285,5 @@ Our `services` creates the brigde to core functionality, `nudge.recommender`. Th
 Did I lose you? It is okay to be lost. 
 
 ##### Automate Boring ... Every Stuff
+
+Pre-commit, pyproject.toml and github action
