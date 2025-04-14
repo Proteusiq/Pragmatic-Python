@@ -1,8 +1,8 @@
 # Road Map
 
-- [ ] Leaving the Basic Behind: Project Structure & Environments  
-  - [ ] Structure Like You Mean It – Friends Don't Let Friends Mess with System Paths  
-  - [ ] Commit or Quit: No Version Control, No Mercy – Friends Don’t Let Friends Skip Git
+- [X] Leaving the Basic Behind: Project Structure & Environments  
+  - [X] Structure Like You Mean It – Friends Don't Let Friends Mess with System Paths  
+  - [X] Commit or Quit: No Version Control, No Mercy – Friends Don’t Let Friends Skip Git
 
 - [ ] Use the Damn Stdlib: Stop Coding Like It’s 1999 – Friends Don’t Let Friends Reinvent Wheels
 
