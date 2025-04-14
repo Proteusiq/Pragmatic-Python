@@ -23,11 +23,15 @@ A Python project is no different. Misplace a file, and you are out of control: b
 
 Use `uv init --lib` and two `SOLID` principles—`Single Responsibility (S)` and `Dependency Inversion (D)`—to craft a system as tight as a Copenhagen kitchen. Yes, you heard me correct, principles also applies to our project structure as much as they apply to the code we write.
 
-##### 1.2 Setp 1: Clean Slate - `uv init --lib`
+##### 1.2 Setp 1: Clean Slate - `uv init --lib nudge`
 
-Let create a pragmatic project repository, `nudge`. A nudging book recommendation system project. We, of cause, will start with `uv init --lib nudge`. It is like stepping into a Danish flat—bare, logical, ready for `hygge`. You get `pyproject.toml`, a configuration file used by packaging tools, linters, type checkers, et cetera. We will circle back to make maximium use of it. `src/nudge/` for our code, and we self `mkdir tests/` for truth. 
+# Building `nudge`: A Pragmatic Book Recommender
 
-No one-file dumpster fires or import roulette. This is ETC's base: change code? `src/`. Test it? `tests/`. Onboard? 'Code is here, tests there.' Control starts here—no `sys.path` clownery, no joker code slipping through.
+Let us craft `nudge`, a book recommendation system that is all about practical nudges to great reads—no fluff, just results. We are diving in with [`uv`](https://docs.astral.sh/uv/) because it’s the pragmatic choice: `uv init --lib nudge`. It is stepping into a Copenhagen flat—clean, logical, primed for `hygge` without the clutter.
+
+This command sets up a lean foundation: [`pyproject.toml`](https://peps.python.org/pep-0518/) at the core, ready to orchestrate packaging, linters, type checkers, and whatever else you throw at it. No overengineered nonsense—`uv` gives you what you need to ship. The `src/nudge/` directory is your blank canvas for code that *works*. Want truth? We’ll carve it out ourselves: `mkdir tests/` to keep things razor focus with tests that don’t lie.
+
+We’ll loop back to `pyproject.toml` to squeeze some ounce of utility from it. For now let's zero on structure. Built to deliver, not to impress. No one-file dumpster fires or import roulette. This is ETC's base: change code? `src/`. Test it? `tests/`. Onboard? 'Code is here, tests there.' Control starts here—no `sys.path` clownery, no joker code slipping through.
 
  `````{tab-set}
 ````{tab-item} Intial Layout
@@ -109,7 +113,10 @@ uv run pytest
 `````
 Boom! `det her er helt vild!`. One file, one job, one test. Change `recommend`? It’s right there. Test? Run one file. Onboard? ‘This suggests.’ Like toilet paper arm’s reach—no messy `sys.path` creeping in. It just works.
 
+Did you  noticed that separated our packages into sections. Yes, again, design principles applies to how we separate external packages. This would enable us to include only required packages for a particular flow. For example, you don't want pre-commits, pytest, linters into your production flow, do you?  
+
 Commit or Quit: No Version Control, No Mercy. _Friends Don’t Let Friends Skip Git_. `git add <FILES>; git commit -m "Start project nudge"`. 
+
 
 
 ##### 1.3 Step 2: Single Responsibility—Labeled Jars
