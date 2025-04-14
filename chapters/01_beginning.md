@@ -283,3 +283,5 @@ In `nudge`, our `routes` shouldn’t dig into the guts of `nudge.recommender`, l
 Our `services` creates the brigde to core functionality, `nudge.recommender`. This cuts ties, between our core `recommender` and api's `routes`, making ETC sing: swap the `nudge.recommender`, `routes` don’t care; mock services for tests; onboard with “this plugs in here.” A nod to `Interface Segregation (I)` keeps it tighter—`routes` only sees the methods it uses, no bloated baggage.
 
 Did I lose you? It is okay to be lost. 
+
+##### Automate Boring ... Every Stuff
