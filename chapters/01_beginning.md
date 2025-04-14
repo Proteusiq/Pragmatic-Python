@@ -116,7 +116,146 @@ Commit or Quit: No Version Control, No Mercy. _Friends Don’t Let Friends Skip 
 
 `Single Responsibility (S)` is Danish order: one thing, one place. It is our path to ETC. To keep control: change one part, others sip coffee; test one job; onboard with ‘this does this.’ No delays, no reputation hits.  Every folder, file, function gets one job—project-wide. 
 
-Let's add `api` without moving toilet paper across the room. 
+Let's add `api` without moving toilet paper across the room. No surprise here. `Fastapi` is a pragmatic choice. `uv add --group api  "fastapi[standard]"`. Don't worry about the Cambrian explosion of files and folders. We will delete them all and build it slowly. For now, lets focus on project structure.
 
- ... WIP 
+
+ `````{tab-set}
+````{tab-item} Updated Layout
+```{code-block} sh
+
+.
+├── pyproject.toml
+├── README.md
+├── src
+│   └── nudge
+│       ├── __init__.py
+│       ├── app
+│       │   ├── api
+│       │   │   └── routes
+│       │   │       ├── __init__.py
+│       │   │       ├── heartbeat.py
+│       │   │       └── recommender.py
+│       │   ├── core
+│       │   │   └── config.py
+│       │   ├── main.py
+│       │   ├── models
+│       │   │   ├── __init__.py
+│       │   │   ├── heartbeat.py
+│       │   │   └── recommender.py
+│       │   └── services
+│       │       └── recommender.py
+│       ├── py.typed
+│       └── recommender.py
+├── tests
+│   ├── __init__.py
+│   ├── app
+│   │   ├── conftest.py
+│   │   ├── test_api
+│   │   │   ├── test_heartbeat.py
+│   │   │   └── test_recommender.py
+│   │   └── test_services
+│   │       └── test_service.py
+│   └── test_recommender.py
+└── uv.lock
+
+
+````
+
+````{tab-item} Api Conftest 
+
+```{code-block} python
+# tests/app/test_api/test_recommender.py
+import pytest
+from starlette.testclient import TestClient
+
+from nudge.app.main import app
+
+
+@pytest.fixture()
+def test_client():
+    with TestClient(app) as test_client:
+        yield test_client
+```
+````
+
+````{tab-item} Api Tests
+```{code-block} python
+# tests/app/test_services/test_service.py
+from nudge.app.services import recommender
+from nudge.app.models import RecommendationResponse
+
+
+def test_recommend():
+    book: str = "smørrebrød"
+    results = recommender.recommend(book)
+
+    assert isinstance(results, RecommendationResponse)
+    assert results.books == [
+        "Suggest: smørrebrød",
+    ]
+
+# tests/app/test_api/test_recommender.py
+def test_prediction(test_client) -> None:
+    response = test_client.post(
+        "/api/v1/recommendation",
+        json={"book": "smørrebrød"},
+        headers={"accept": "application/json"},
+    )
+
+    assert response.status_code == 200
+    assert "Suggest: smørrebrød" in response.json().get("books")
+
+```
+````
+`````
+
+Let's fire it up 
+
+ `````{tab-set}
+````{tab-item} Run QA
+```{code-block} sh
+
+# format
+ uv run ruff format
+
+# fix issues
+ uv run ruff check --fix
+
+```
+````
+````{tab-item} Run Tests
+```{code-block} sh
+
+ uv run pytest
+==================================== test session starts ====================================
+platform darwin -- Python 3.12.2, pytest-8.3.5, pluggy-1.5.0
+rootdir: /Users/XXXX/Codes/nudge
+configfile: pyproject.toml
+plugins: anyio-4.9.0
+collected 5 items
+
+tests/app/test_api/test_heartbeat.py::test_heartbeat PASSED                           [ 20%]
+tests/app/test_api/test_heartbeat.py::test_default_route PASSED                       [ 40%]
+tests/app/test_api/test_recommender.py::test_prediction PASSED                        [ 60%]
+tests/app/test_services/test_service.py::test_recommend PASSED                        [ 80%]
+tests/test_recommender.py::test_recommend PASSED                                      [100%]
+
+===================================== 5 passed in 1.48s =====================================
+
+```
+````
+
+````{tab-item} Run Dev Api
+```{code-block} sh
+
+# test
+uv run fastapi dev src/nudge/app/main.py
+````
+`````
+Look ma, we have working api.
+
+````{figure} ../assets/nudge.png
+
+
+ ... WIP
 Notes: See where I am with code Codes/nudge. Use huggingfaceapi example. 
