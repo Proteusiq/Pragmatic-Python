@@ -287,3 +287,5 @@ Did I lose you? It is okay to be lost.
 #### Automate Boring ... Every Stuff
 
 Pre-commit, pyproject.toml and github action
+
+next: TDD: chapter 2 that should have been chapter one.
