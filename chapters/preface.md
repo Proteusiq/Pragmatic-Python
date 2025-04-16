@@ -157,7 +157,7 @@ if __name__ == "__main__":
 ```
 ````
  `````
-We can write Python code in a million ways -OOP, functional, or what have you. A pragmatic mindset says, I don’t care about the paradigm fetish. I care about code that works, changes without a meltdown, and doesn’t make onboarding a nightmare. If I can’t understand and test it in ten minutes, it’s trash.
+We can write Python code in a thousand ways -OOP, functional, or what have you. A pragmatic mindset says, I don’t care about the paradigm fetish. I care about code that works, changes without a meltdown, and doesn’t make onboarding a nightmare. If I can’t understand and test it in ten minutes, it’s trash.
 
 ###### Are You Still My Friend?
 
