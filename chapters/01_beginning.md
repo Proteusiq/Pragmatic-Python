@@ -29,7 +29,7 @@ Use `uv init --lib` and `SOLID` principles—`Single Responsibility (S)`, `Depen
 
 Let us craft `nudge`, a book recommendation system that is all about practical nudges to great reads—no fluff, just results. We are diving in with [`uv`](https://docs.astral.sh/uv/) because it’s the pragmatic choice: `uv init --lib nudge`. It is stepping into a Copenhagen flat—clean, logical, primed for `hygge` without the clutter.
 
-This command sets up a lean foundation: [`pyproject.toml`](https://peps.python.org/pep-0518/) at the core, ready to orchestrate packaging, linters, type checkers, and whatever else you throw at it. No overengineered nonsense—`uv` gives you what you need to ship. The `src/nudge/` directory is your blank canvas for code that *works*. Want truth? We’ll carve it out ourselves: `mkdir tests/` to keep things razor focus with tests that don’t lie.
+This command sets up a lean foundation: [`pyproject.toml`](https://peps.python.org/pep-0518/) at the core, ready to orchestrate packaging, linters, type checkers, and whatever else you throw at it. No overengineered nonsense—`uv` gives you what you need to ship. The `src/nudge/` directory is your blank canvas for code that *works*. Want truth? We’ll carve it out ourselves: `mkdir tests/` to keep things Noma's kitchen-knives' sharp focus with tests that don’t lie.
 
 We’ll loop back to `pyproject.toml` to squeeze some ounce of utility from it. For now let's zero on structure. Built to deliver, not to impress. No one-file dumpster fires or import roulette. This is ETC's base: change code? `src/`. Test it? `tests/`. Onboard? 'Code is here, tests there.' Control starts here—no `sys.path` clownery, no joker code slipping through.
 
