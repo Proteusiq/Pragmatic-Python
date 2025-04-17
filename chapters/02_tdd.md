@@ -1,0 +1,14 @@
+#### TDD Done Pragmatically
+
+> The problem with test-driven development is that it focuses attention on getting specific features working, rather than finding the best design. This is tactical programming pure and simple, with all of its disadvantages. Test-driven development is too incremental: at any point in time, it’s tempting to just hack in the next feature to make the next test pass. There’s no obvious time to do design, so it’s easy to end up with a mess - A Philosophy of Software Design by John K. Ousterhout
+
+Ousterhout throws a punch at Test-Driven Development (TDD): it’s too tactical, too focused on making features work, and risks leaving you with a tangled codebase because there’s no clear time to design. He’s not entirely wrong—TDD’s write-test-pass-refactor grind can feel like you’re just slapping together smørrebrød to feed the next hungry tourist. No time to think pragmatically, just “make the test green.” Fair jab, John.
+`Men vi må ikke smide barnet ud med badevandet.` Ousterhout’s critique assumes TDD skips design entirely, which isn’t the full story. The refactor step is your design checkpoint. It’s where you polish, streamline, and align with SOLID principles like Single Responsibility or Dependency Inversion we met in Chapter 1. The catch? Refactoring takes discipline. Skip it, and you’re writing what we called “joker code” last chapter—functional but fragile. TDD doesn’t force you into a mess; sloppy execution does.
+
+The “too incremental” jab also stings but misses TDD’s strength. Yes, TDD builds in small steps, and without a guiding vision, you could pile up features until the structure groans. But incrementalism lets you adapt—requirements shift, and that “perfect” upfront design might crumble by sprint three. TDD’s tests keep you honest, catching regressions as you go. Compare that to designing first, testing") testing later: you risk missing edge cases, and tests can feel like a chore. TDD bakes in rigor, if you wield it right.
+
+So, Ousterhout’s not wrong to warn about tactical pitfalls, but TDD isn’t anti-design—it’s design through iteration. The mess he fears comes from half-hearted refactoring or no vision, not TDD itself. Done pragmatically, TDD is a compass, not a cage.
+
+
+TDD’s True Essence: A Blueprint, Not Just Tests
+Forget the misconception that TDD is just about churning out tests. Tests are the byproduct, not the prize. TDD is your architectural blueprint—a way to think through your code before you write it. It’s a language to share your vision with teammates and stakeholders, letting them step into your headspace. By writing tests first, you’re sketching use cases, shaping design organically from what the system needs to do. It’s disciplined creation, a dance of intent and code that builds not just software, but shared understanding.
