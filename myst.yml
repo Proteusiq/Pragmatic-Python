@@ -19,7 +19,7 @@ project:
     - file: chapters/preface.md
       title: Introduction
     - file: chapters/01_beginning.md
-    - file: chapter/02_ttd.md
+    - file: chapters/02_ttd.md
     - file: chapters/roadmap.md
 site:
   options:
