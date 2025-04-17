@@ -282,7 +282,6 @@ In `nudge`, our `routes` shouldn’t dig into the guts of `nudge.recommender`, l
 
 Our `services` creates the brigde to core functionality, `nudge.recommender`. This cuts ties, between our core `recommender` and api's `routes`, making ETC sing: swap the `nudge.recommender`, `routes` don’t care; mock services for tests; onboard with “this plugs in here.” A nod to `Interface Segregation (I)` keeps it tighter—`routes` only sees the methods it uses, no bloated baggage.
 
-# The Beauty of Pragmatic Programming
 
 Did I lose you? It’s okay to feel lost—programming’s beauty lies in that very chaos. What makes *pragmatic programming* so amazing is the chance to learn and uncover simple, intuitive ways to tackle challenges. Step by step, we’ll build a case for why this approach creates a pragmatic structure. But before we crack open another Tuborg, let’s start at the beginning: [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). This is the pragmatic gospel I preach.
 
