@@ -56,6 +56,6 @@ This workflow keeps you focused on the user while giving you space to design ite
 
 ###### WIP: Closing ...
 
-Ousterhout’s critique hits because it’s half-true. Tactical TDD can lead to a mess if you chase green lights without discipline. But pragmatic TDD—driven by user stories and anchored in refactoring—sidesteps those pitfalls. It’s not anti-design; it’s *design gennem iteration*. The incrementalism he criticizes is a strength, letting you adapt to shifting requirements without breaking the system. The mess he fears comes from sloppy execution, ikke TDD selv.
+Ousterhout’s critique hits because it’s half-true. Tactical TDD can lead to a mess if you chase green lights without discipline. But pragmatic TDD—driven by user stories and anchored in refactoring—sidesteps those pitfalls. It’s not anti-design; it’s *design gennem iteration*. The incrementalism he criticizes is a strength, letting you adapt to shifting requirements without breaking the system. The mess he fears comes from sloppy execution, not TDD self.
 
-With USDD, TDD becomes a tool for solving real problems, not just passing tests. User stories keep you grounded, refactoring keeps you clean, and the result is software that’s pragmatic, adaptable, og bygget til at holde.
+With USDD, TDD becomes a tool for solving real problems, not just passing tests. User stories keep you grounded, refactoring keeps you clean, and the result is software that’s pragmatic, adaptable, and _`bygget til at holde` {built to last, psst! Dansk}.
