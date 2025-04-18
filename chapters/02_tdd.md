@@ -39,7 +39,7 @@ This balance avoids the mess Ousterhout fears. Tactical TDD might lead to a frag
 So, how do you bring USDD to your Python projects?
 
 1. **Start with the User Story**: Pin down a clear user need, like “As a user, I want to log in so I can access my account.”
-2. **Write a High-Level Test**: Create an integration or end-to-end test that captures the user’s goal, e.g., `test_user_can_log_in_with_valid_credentials`. Use `pytest` or `unittest` for simplicity.
+2. **Write a High-Level Test**: Create an integration or end-to-end test that captures the user’s goal, e.g., `test_user_can_log_in_with_valid_credentials`. Use `pytest`, not `unittest`, for simplicity.
 3. **Make It Pass (Minimally)**: Write just enough code to pass the test. Don’t overengineer—focus on delivering the functionality.
 4. **Refactor with SOLID in Mind**: Simplify the code, cut complexity, and align with pragmatic structure. Check that the test still passes.
 5. **Add Unit Tests (If Needed)**: For complex logic, add unit tests to verify specific components, but keep them secondary.
