@@ -1,6 +1,9 @@
-#### TDD Done Pragmatically – User Stories as the North Star
+#### TDD Done Pragmatically
 
 > The problem with test-driven development is that it focuses attention on getting specific features working, rather than finding the best design. This is tactical programming pure and simple, with all of its disadvantages. Test-driven development is too incremental: at any point in time, it’s tempting to just hack in the next feature to make the next test pass. There’s no obvious time to do design, so it’s easy to end up with a mess - A Philosophy of Software Design by John K. Ousterhout
+
+
+##### User Stories as the North Star
 
 Ousterhout’s critique stings like a cold Danish wind: TDD can feel like a hamster wheel—write a test, make it pass, repeat. It’s tempting to hack in just enough code to flip the test green, like slapping together smørrebrød for a hungry tourist. This *tactical programming* risks a codebase that’s functional but fragile—a Jenga tower of features ready to collapse. Without a clear moment to step back and design, we’re not building software; we’re assembling *joker code*, chaotic and unmaintainable.
 
