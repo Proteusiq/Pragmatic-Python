@@ -37,7 +37,7 @@ Ousterhout worries TDD lacks vision, but USDD flips that on its head. By tying t
 
 This balance avoids the mess Ousterhout fears. Tactical TDD might lead to a fragmented codebase, but pragmatic TDD, driven by user stories, builds a system that’s cohesive and purposeful. Each test cycle strengthens the design, each refactor solidifies the structure, and each user story keeps you grounded in *hvad der tæller*.
 
-##### 1.3: Pragmatic TDD in Practice: En pragmatisk arbejdsgang
+######Pragmatic TDD in Practice: En pragmatisk arbejdsgang
 
 So, how do you bring USDD to your Python projects?
 
@@ -50,9 +50,11 @@ So, how do you bring USDD to your Python projects?
 
 This workflow keeps you focused on the user while giving you space to design iteratively. It’s TDD as a *kompas*, not a cage, guiding you toward software that’s functional and built to last.
 
-###### WIP:Let's go through it together
+##### 1.3: WIP:Let's go through it together
 
 - show, don't tell
+
+🦦 introduce AAA and Given, When, Then.
 
 ###### WIP: Closing ...
 
