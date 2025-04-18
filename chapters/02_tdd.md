@@ -7,7 +7,7 @@
 
 Ousterhout’s critique stings like a cold Danish wind: TDD can feel like a hamster wheel—write a test, make it pass, repeat. It’s tempting to hack in just enough code to flip the test green, like slapping together smørrebrød for a hungry tourist. This *tactical programming* risks a codebase that’s functional but fragile—a Jenga tower of features ready to collapse. Without a clear moment to step back and design, we’re not building software; we’re assembling *joker code*, chaotic and unmaintainable.
 
-Fair jab. Ousterhout has a point, _`men vi må ikke smide barnet ud med badevandet`_. TDD, done pragmatically, isn’t about piling up unit tests—it’s about crafting a system that solves the *core problem* through user defined and agreed stories. Say hello to  *User Story Driven Development* (USDD), where tests serve the user’s needs.
+Fair jab. Ousterhout has a point, _but_, yes, there is always a _but_, TDD is much more than green checks. TDD, done pragmatically, isn’t about piling up unit tests—it’s about crafting a system that solves the *core problem* through user defined and agreed stories. Say hello to  *User Story Driven Development* (USDD), where tests serve the user’s needs.
 
 ###### The Tactical TDD Thor's Hammer Trap
 
