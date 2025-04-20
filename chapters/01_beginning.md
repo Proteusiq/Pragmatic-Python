@@ -111,7 +111,7 @@ uv add --group test pytest
 uv run pytest
 ````
 `````
-Skål! `det her er helt vild!`. One file, one job, one test. Change `recommend`? It’s right there. Test? Run one file. Onboard? ‘This suggests.’ Like toilet paper arm’s reach—no messy `sys.path` creeping in. It just works. Pure `fad øl`.
+Skål! `det her er helt vild!`. One file, one job, one test. Change `recommend`? It’s right there. Test? Run one file. Onboard? ‘This suggests.’ Like toilet paper arm’s reach—no messy `sys.path` creeping in. It just works. Pure `fadøl`. A Nørrebro Øko Classic.
 
 ###### Pragmatic Package Separation
 
