@@ -269,9 +269,13 @@ _`Se mor, det virker!`_ Our `api` is up, nudging books like a charm, no `lort` i
 
 ````{figure} ../assets/nudge.png
 ````
+```{note}
+# 🦦 MDR
 
+A handshake is available on request.
 
-> "A handshake is available on request" - Cobel, Serevarance 
+— Cobel, Serevarance
+```
 
 
 ##### 1.4 Step 3: D and I — Don’t Touch the Milk 
