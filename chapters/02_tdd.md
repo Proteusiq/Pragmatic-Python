@@ -12,13 +12,20 @@ The problem with test-driven development is that it focuses attention on getting
 
 Ousterhout’s critique stings like a cold Danish wind: TDD can feel like a hamster wheel—write a test, make it pass, repeat. It’s tempting to hack in just enough code to flip the test green, like slapping together smørrebrød for a hungry tourist. This *tactical programming* risks a codebase that’s functional but fragile—a Jenga tower of features ready to collapse. Without a clear moment to step back and design, we’re not building software; we’re assembling *joker code*, chaotic and unmaintainable.
 
-Fair jab. Ousterhout has a point, _but_, yes, there is always a _but_, TDD is much more than Nala Se's private research lab to oversee green–checks–pass in Kamino. TDD, done pragmatically, isn’t about piling up unit tests—it’s about crafting a system that solves the *core problem* through user defined and agreed stories. It is the Clone's trooper rallying call: _`An army of one man, but the right man for the job.`_ Say hello to  *User Story Driven Development* (USDD), where tests serve the user’s stories needs, and not so much the inner implementation needs.
+Fair jab. Ousterhout has a point, _but_, yes, there is always a _but_, TDD is much more than Nala Se's private research lab to oversee green–checks–pass in Kamino. TDD, done pragmatically, isn’t about piling up unit tests—it’s about crafting a system that solves the *core problem* through user defined and agreed stories. It is the Clone's trooper rallying call: _`An army of one man, but the right man for the job.`_ Say hello to *User Story Driven Development* (USDD), where tests are the North Star. They guide us in crafting a system that solves the *core problem* through user defined and agreed requirements. Thus, the focus is less in piling up unit tests, as bicycling in Nørrebrogade, and more standing enjoying `Yakima IPA` at Mærsk Tårnet.
 
 ###### The Tactical TDD Thor's Hammer Trap
 
-In Chapter 1, I built a case for *pragmatic structure*—structure that’s ETC, testable, easy to onboard, and rooted in SOLID principles. Test-Driven Development (TDD) with a pragmatic twist steers clear of the tactical traps Ousterhout hammered. Yes, unpragmatic TDD focus on passing tests that can lead to incremental hacks, leaving design in the dust and your codebase a toilet mess. _`Men vi må ikke smide barnet ud med badevandet`_. TDD, done pragmatically, isn’t about piling up unit tests—it’s about crafting a system that solves the *core problem* through user defined and agreed stories. Say hello to *User Story Driven Development* (USDD), where tests serve to meet the user’stories requirements.
+In Chapter 1, I built a case for *pragmatic structure*—structure that’s ETC, testable, easy to onboard, and rooted in SOLID principles. TDD with a pragmatic twist steers clear of the tactical traps Ousterhout hammered. Yes, unpragmatic TDD focus on passing tests that can lead to incremental hacks, leaving design in the dust and your codebase a toilet mess. _`Men vi må ikke smide barnet ud med badevandet`_. The problem isn’t TDD—it’s how it’s often done. Skip the *refactor* step or treat tests as checkboxes, and you’re not practicing TDD; you’re betraying the pragmatic structure we championed in Chapter 1. Ousterhout assumes TDD ignores design, but he overlooks refactoring, where you polish your code, align with SOLID, and keep things cohesive. It’s not TDD’s fault if you rush past that step. 
 
-The problem isn’t TDD—it’s how it’s often done. Skip the *refactor* step or treat tests as checkboxes, and you’re not practicing TDD; you’re betraying the pragmatic structure we championed in Chapter 1. Ousterhout assumes TDD ignores design, but he overlooks refactoring, where you polish your code, align with SOLID, and keep things cohesive. It’s not TDD’s fault if you rush past that step.
+In a perfect world, TDD would take the lead, shaping even how we do a pragmatic structure from the start. To avoid Ousterhout’s feature-chasing trap, a fence is necessary. Coding’s often like Pusher Street in Freetown Christiania—wild and free in the early stage. That’s why we started with structure, a solid fence to keep things in check, letting TDD’s test-write-refactor rhythm hammer out a design that’s anything but a tactical mess.
+
+```{note}
+# 🦦 Good TDD-er
+
+I used to believe that being a good soldier meant doing everything they told you. That’s how they engineered us. But we’re not droids. We’re not programmed. You have to learn to make your own decisions
+—  Captain Rex
+```
 
 ###### User Stories: The Heart of Pragmatic TDD
 
@@ -42,7 +49,7 @@ Ousterhout worries TDD lacks vision, but USDD flips that on its head. By tying t
 
 This balance avoids the mess Ousterhout fears. Tactical TDD might lead to a fragmented codebase, but pragmatic TDD, driven by user stories, builds a system that’s cohesive and purposeful. Each test cycle strengthens the design, each refactor solidifies the structure, and each user story keeps you grounded in *hvad der tæller*.
 
-######Pragmatic TDD in Practice: En pragmatisk arbejdsgang
+###### Pragmatic TDD in Practice: En pragmatisk arbejdsgang
 
 So, how do you bring USDD to your Python projects?
 
