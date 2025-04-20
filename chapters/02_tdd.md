@@ -1,7 +1,12 @@
 #### TDD Done Pragmatically
 
-> The problem with test-driven development is that it focuses attention on getting specific features working, rather than finding the best design. This is tactical programming pure and simple, with all of its disadvantages. Test-driven development is too incremental: at any point in time, it’s tempting to just hack in the next feature to make the next test pass. There’s no obvious time to do design, so it’s easy to end up with a mess - A Philosophy of Software Design by John K. Ousterhout
+```{note} 
+# 🐺 Episode II - Attack of the Clones
 
+The problem with test-driven development is that it focuses attention on getting specific features working, rather than finding the best design. This is tactical programming pure and simple, with all of its disadvantages. Test-driven development is too incremental: at any point in time, it’s tempting to just hack in the next feature to make the next test pass. There’s no obvious time to do design, so it’s easy to end up with a mess
+
+ - A Philosophy of Software Design by John K. Ousterhout
+```
 
 ##### 1.1: User Stories as the North Star
 
