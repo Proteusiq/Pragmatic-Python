@@ -21,9 +21,10 @@ In Chapter 1, I built a case for *pragmatic structure*—structure that’s ETC,
 In a perfect world, TDD would take the lead, shaping even how we do a pragmatic structure from the start. To avoid Ousterhout’s feature-chasing trap, a fence is necessary. Coding’s often like Pusher Street in Freetown Christiania—wild and free in the early stage. That’s why we started with structure, a solid fence to keep things in check, letting TDD’s test-write-refactor rhythm hammer out a design that’s anything but a tactical mess.
 
 ```{note}
-# 🦦 Good TDD-er
+# 🦦 The Good TDD-er
 
 I used to believe that being a good soldier meant doing everything they told you. That’s how they engineered us. But we’re not droids. We’re not programmed. You have to learn to make your own decisions
+
 —  Captain Rex
 ```
 
