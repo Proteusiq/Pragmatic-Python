@@ -1,5 +1,7 @@
 # Road Map
 
+- [ ] Chapters
+
   - [X] Leaving the Basic Behind: Project Structure & Environments  
   - [X] Structure Like You Mean It – Friends Don't Let Friends Mess with System Paths  
   - [X] Commit or Quit: No Version Control, No Mercy – Friends Don’t Let Friends Skip Git
