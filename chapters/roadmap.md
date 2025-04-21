@@ -25,3 +25,5 @@ TDD done correctly: Answer the objection from Pragmatic Programming.
 Think Like A Dane!
 ```
 
+> hjeterne er gule, sjælden den er blå
+
