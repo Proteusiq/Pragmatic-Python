@@ -9,7 +9,7 @@ to write to my democratic self. It is fiercely opinionated way to programming
 with Python.
 
 I bring a hefty dose of Danish sarcasm to the table and don’t take everything
-too seriously—because, let’s be real, religiously following ideas, best
+too seriously, because, let’s be real, religiously following ideas, best
 practices, design patterns or rules is a total buzzkill (and frankly
 anti-pragmatic). It’s for my book, Pragmatic Python, of course.
 
