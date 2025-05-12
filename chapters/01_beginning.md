@@ -78,7 +78,7 @@ We will come back to `TDD - Test Driven Development` done correctly. For now, le
 ```
 _Continue your quest by taking the test_ - Ernest Cline, Ready Player One
 
-Let's fire it.
+Let's fire it up.
 
  `````{tab-set}
 ````{tab-item} Packages
@@ -287,6 +287,6 @@ In `nudge`, our `routes` shouldn’t dig into the guts of `nudge.recommender`, l
 Our `services` creates the brigde to core functionality, `nudge.recommender`. This cuts ties, between our core `recommender` and api's `routes`, making ETC sing: swap the `nudge.recommender`, `routes` don’t care; mock services for tests; onboard with “this plugs in here.” A nod to `Interface Segregation (I)` keeps it tighter, `routes` only sees the methods it uses, no bloated baggage.
 
 
-_`Er du faret vildt?`_ Did I lose you? It’s okay to feel lost, programming’s beauty lies in that very wondering. What makes *pragmatic programming* so amazing is the chance to learn and uncover simple, intuitive ways to tackle big challenges. Step by step, we’ll build a case for why this approach creates a pragmatic structure. But before we crack open another Tuborg, let’s start at the beginning: [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). This is the spark that lights the pragmatic fire.
+_`Er du faret vild?`_ Did I lose you? It’s okay to feel lost, programming’s beauty lies in that very wondering. What makes *pragmatic programming* so amazing is the chance to learn and uncover simple, intuitive ways to tackle big challenges. Step by step, we’ll build a case for why this approach creates a pragmatic structure. But before we crack open another Tuborg, let’s start at the beginning: [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). This is the spark that lights the pragmatic fire.
 
 next: TDD: chapter 2 that should have been chapter one.
