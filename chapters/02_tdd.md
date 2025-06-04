@@ -14,7 +14,7 @@ Ousterhout’s critique stings like a cold Danish wind: TDD can feel like a hams
 
 Fair jab. Ousterhout has a point, _but_, yes, there is always a _but_, TDD is much more than Nala Se's private research lab to oversee red-green–pass-checks in Kamino. TDD, done pragmatically, isn’t about piling up unit tests, it’s about crafting a system that solves the *core problem* through user defined and agreed stories. It is the Clone's trooper rallying call, _`An army of one man, but the right man for the job.`_ 
 
-Say hello to my ... *User Story Driven Development* (USDD), where tests are the North Star. They guide us in crafting a system that solves the *core problem* through user defined and agreed requirements. The focus, is therefore, less in piling up unit tests, as bicycling in Nørrebrogade, and more standing enjoying `Yakima IPA` at Mærsk Tårnet.
+Say hello to my ... *User Story Driven Development* (USDD), where tests are the North Star. They guide us in crafting a system that solves the *core problem* through user defined and agreed requirements. The focus, is therefore, less in piling up unit tests, as bicycling in Nørrebrogade, and more standing enjoying `Yakima IPA` at Mærsk Tårnet, with a clear view of the entire development goal from end to end.
 
 ###### The Tactical TDD Thor's Hammer Trap
 
