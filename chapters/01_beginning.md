@@ -11,7 +11,7 @@ Stick with `uv` or `pixi`, and you’ll thank me later.
 #### Structure Like You Mean It 
 > Friends Don’t Let Friends Mess with System Path
   
-If you are battling circular imports, or importing `src`, or shoving `sys.path` hack to make your code run, congrats, you are slinging mediocre joker code, pure clown project structure so tangled, it would make Danes yeet their Carlsberg.
+If you are battling circular imports, importing `src`, or shoving `sys.path` hack to make your code run, congrats, you are slinging mediocre joker code, pure clown project structure so tangled, it would make Danes yeet their Carlsberg.
 
 This chapter is about structure: a pragmatic project structure , built for ETC—easy to change, test, onboard. Why? Control. A pragmatic designed system keeps bugs, delays, and costs from screwing your reputation and your company, a distance. Like milk on the fridge door or the trash bin under the kitchen's sink, everything ought to be where it belongs, because losing control is not a Danish lifestyle. It is not an option.
 
