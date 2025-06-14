@@ -170,5 +170,5 @@ I’m Prayson Wilfred Daniel, Principal Data Scientist at `_42`, and I’ve writ
 
 I ditched `pandas` bloat for `polars`, `requests` for `httpx`, `unittest` for `pytest`. Legacy’s dead; `uv` and `ruff` run my show. This book’s my alter-ego's fight, pragmatic, no-BS code that works. Friends don’t let friends settle for less.
 
-I bring a hefty dose of Danish sarcasm to the table and don’t take everything too seriously, because, let’s be real, religiously following ideas, best practices, design patterns or rules is a total buzzkill (and frankly anti-pragmatic). It is for my alter-ago book, Pragmatic Python, of course.
+I bring a hefty dose of Danish sarcasm to the table and don’t take everything too seriously, because, let’s be real, religiously following ideas, best practices, design patterns or rules is a total buzzkill (and frankly anti-pragmatic).
 
