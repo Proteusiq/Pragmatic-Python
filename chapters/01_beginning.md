@@ -19,7 +19,7 @@ This chapter is about structure: a pragmatic project structure , built for ETC�
 
 You are in WC, our favourite quiet office room,  picture this, the toilet paper is across the room. You reach for it, shit gets messy, literally. That is code without structure. In a Danish flat, the bin is under the kitchen sink, milk is on the fridge door, butter is in its slot, order kills chaos. Danes are busy being happy. No time for _rod_.
 
-A Python project is no different. Misplace a file, and you are out of control: bugs creep, shipping stalls, your reputation tanks, production costs skyrocket. A pragmatic project structure means it is ETC—easy to change, test, onboard. It puts you in charge. No hunting, no cursing. 
+A Python project is no different. Misplace a file, and you are out of control: bugs creep, shipping stalls, your reputation tanks, production costs skyrocket. A pragmatic project structure means it is ETC—easy to change, test, and onboard. It puts you in charge. It does require a Viking’s treasure map to understand. No hunting, no cursing. 
 
 Use `uv init --lib` and `SOLID` principles—`Single Responsibility (S)`, `Dependency Inversion (D)` and `Interface Segregation`, to craft a system as tight as a Copenhagen kitchen. Yes, you heard me correct, principles also applies to our project structure as much as they apply to the code we write.
 
