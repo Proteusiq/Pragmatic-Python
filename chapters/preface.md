@@ -6,7 +6,7 @@
 way that is based on practical rather than theoretical considerations. -
 Oxford's Google Dictionary
 
-Mediocre code sucks, I’ve been there. I’ve written it. I’ve reviewed worse. Picture a chump—me—hammering out scripts with no tests, `pip install` chaos, and prayers to the gods of bytes it’d run on someone else’s machine. The journey to pragmatism? It is me, fed up with endless rewrites, saying ‘no more.’
+Mediocre code sucks, I’ve been there. I’ve written it. I’ve reviewed worse. Picture a chump-me-hammering out scripts with no tests, `pip install` chaos, and prayers to the gods of bytes it’d run on someone else’s machine. The journey to pragmatism? It is me, fed up with endless rewrites, saying ‘no more.’
 
 Mediocre code is not GPT-3.5’s vibe-salad disaster, it is just code I can not stand. Yeah, I said it. My case for pragmatism is here to make you hate it too. It’s okay to disagree; in fact, I expect you to in some cases. It means you’re pragmatic after all.
 
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 ````
  `````
 `Example II:`
-Take word-counting: I used to cobble together if-else messes, reinventing the wheel like a rookie. Then I stumbled on stdlib `defaultdict` —simpler, less embarrassing, but still yet not pragmatic. Enter `Counter`: one clean stdlib line that does it right. It’s not about being clever, it’s about being simple. Master stdlib, and you’ll stop writing junk.
+Take word-counting: I used to cobble together if-else messes, reinventing the wheel like a rookie. Then I stumbled on stdlib `defaultdict`, simpler, less embarrassing, but still yet not pragmatic. Enter `Counter`: one clean stdlib line that does it right. It’s not about being clever, it’s about being simple. Master stdlib, and you’ll stop writing junk.
 
  `````{tab-set}
 ````{tab-item} Terrible
