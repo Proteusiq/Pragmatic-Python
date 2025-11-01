@@ -280,7 +280,7 @@ A handshake is available on request.
 
 ##### 1.4 Step 3: D and I — Don’t Touch the Milk 
 
-`Dependency Inversion (D)`— says high-level modules shouldn’t cling to low-level ones, both should lean on abstractions—it says layers don’t own each other; they ask politely. 
+`Dependency Inversion (D)` - says high-level modules shouldn’t cling to low-level ones, both should lean on abstractions. It says layers don’t own each other; they ask politely. 
 
 In `nudge`, our `routes` shouldn’t dig into the guts of `nudge.recommender`, like you don’t move someone’s milk to get your cheese. Instead, it should use a contract: `services`. 
 
