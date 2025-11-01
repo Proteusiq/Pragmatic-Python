@@ -125,7 +125,7 @@ Now, Commit or Quit: No Version Control, No Mercy. _Friends Don’t Let Friends 
 
 `Single Responsibility (S)` is Danish order: one thing, one place. It is our path to ETC. To keep control: change one part, others sip coffee; test one job; onboard with ‘this does this.’ No delays, no reputation hits.  Every folder, file, function gets one job, project-wide. 
 
-Let us add an `api` layer to spice things up, without moving toilet paper across the room. No surprises here—[`FastAPI`](https://fastapi.tiangolo.com/) is the pragmatic choice. Run `uv add --group api "fastapi[standard]"`. 
+Let us add an `api` layer to spice things up, without moving toilet paper across the room. No surprises here - [`FastAPI`](https://fastapi.tiangolo.com/) is the pragmatic choice. Run `uv add --group api "fastapi[standard]"`. 
 
 _`Rolig nu`_: Do not stress about a Cambrian explosion of files and folders. We’ll clear out the files and build it slowly. For now, let us focus on project structure.
 
